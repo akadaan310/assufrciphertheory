@@ -1,0 +1,763 @@
+{
+ "id": "EXP-12",
+ "question": "حروف صُفْر نفسها: شو بيتغيّر بأدائها من رواية لرواية؟",
+ "groups": {
+  "حي طهر": "أسماؤها حرفين آخرها ألف (مدّ طبيعي)، وهي اللي بتقبل الإمالة/التقليل",
+  "نقص عسلكم": "أسماؤها ثلاث أحرف (مدّ لازم)",
+  "ا": "ألف: ما فيها مدّ"
+ },
+ "data": [
+  {
+   "letters": "الم",
+   "author_class": "طائرة",
+   "per_narration": {
+    "حفص": {
+     "written": "الٓمٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "الٓمٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "أَلَٓمِّٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": true
+    },
+    "قالون": {
+     "written": "أَلَٓمِّٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": true
+    },
+    "الدوري": {
+     "written": "الٓمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "الٓمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "الٓمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "الٓمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "المص",
+   "author_class": "طائرة",
+   "per_narration": {
+    "حفص": {
+     "written": "الٓمٓصٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "الٓمٓصٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "اَلَٓمِّٓصَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "أَلَٓمِّٓصَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "الٓمٓصٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "الٓمٓصٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "الٓمٓصٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "الٓمٓصٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "الر",
+   "author_class": "مغوصة",
+   "per_narration": {
+    "حفص": {
+     "written": "الٓرۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "الٓرٜۚ",
+     "inclined_letters": [
+      "ر"
+     ],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "أَلَٓر۪ۖ",
+     "inclined_letters": [
+      "ر"
+     ],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "أَلَٓرَۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "الٓر۪ۚ",
+     "inclined_letters": [
+      "ر"
+     ],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "الٓر۪ۚ",
+     "inclined_letters": [
+      "ر"
+     ],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "الٓرۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "الٓرۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [
+    "ر"
+   ],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "المر",
+   "author_class": "مغوصة",
+   "per_narration": {
+    "حفص": {
+     "written": "الٓمٓرۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "الٓمٓرٜۚ",
+     "inclined_letters": [
+      "ر"
+     ],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "أَلَٓمِّٓر۪ۖ",
+     "inclined_letters": [
+      "ر"
+     ],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "أَلَٓمِّٓرَۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "الٓمٓر۪ۚ",
+     "inclined_letters": [
+      "ر"
+     ],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "الٓمٓر۪ۚ",
+     "inclined_letters": [
+      "ر"
+     ],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "الٓمٓرۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "الٓمٓرۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [
+    "ر"
+   ],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "كهيعص",
+   "author_class": "طائرة",
+   "per_narration": {
+    "حفص": {
+     "written": "كٓهيعٓصٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "كٓهٜيٜعٓصٓ",
+     "inclined_letters": [
+      "ه",
+      "ي"
+     ],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "كَٓه۪ي۪عَٓصَٓۖ",
+     "inclined_letters": [
+      "ه",
+      "ي"
+     ],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "كَٓهَيَعَٓصَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "كٓه۪يعٓصٓۚ",
+     "inclined_letters": [
+      "ه"
+     ],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "كٓه۪يعٓصٓۚ",
+     "inclined_letters": [
+      "ه"
+     ],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "كٓهيعٓصٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "كٓهيعٓصٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [
+    "ه",
+    "ي"
+   ],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "طه",
+   "author_class": "طائرة",
+   "per_narration": {
+    "حفص": {
+     "written": "طه",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "طٜهٜ",
+     "inclined_letters": [
+      "ط",
+      "ه"
+     ],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "طَه۪ۖ",
+     "inclined_letters": [
+      "ه"
+     ],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "طَهَۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "طه۪ۚ",
+     "inclined_letters": [
+      "ه"
+     ],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "طه۪ۚ",
+     "inclined_letters": [
+      "ه"
+     ],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "طهۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "طهۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [
+    "ط",
+    "ه"
+   ],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "طسم",
+   "author_class": "غير محسوم",
+   "per_narration": {
+    "حفص": {
+     "written": "طسٓمٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "طٜسٓمٓ",
+     "inclined_letters": [
+      "ط"
+     ],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "طَسِٓمِّٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": true
+    },
+    "قالون": {
+     "written": "طَسِٓمِّٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": true
+    },
+    "الدوري": {
+     "written": "طسٓمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "طسٓمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "طسٓمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "طسٓمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [
+    "ط"
+   ],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "طس",
+   "author_class": "مغوصة",
+   "per_narration": {
+    "حفص": {
+     "written": "طسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "طٜسٓۚ",
+     "inclined_letters": [
+      "ط"
+     ],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "طَسِٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "طَسِٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "طسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "طسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "طسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "طسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [
+    "ط"
+   ],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "يس",
+   "author_class": "غير محسوم",
+   "per_narration": {
+    "حفص": {
+     "written": "يسٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "يٜسٓ",
+     "inclined_letters": [
+      "ي"
+     ],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "يَسِٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "يَسِٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "يسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "يسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "يسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "يسٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [
+    "ي"
+   ],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "ص",
+   "author_class": "مغوصة",
+   "per_narration": {
+    "حفص": {
+     "written": "صٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "صٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "صَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "صَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "صٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "صٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "صٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "صٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "حم",
+   "author_class": "غير محسوم",
+   "per_narration": {
+    "حفص": {
+     "written": "حمٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "حٜمٓ",
+     "inclined_letters": [
+      "ح"
+     ],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "ح۪مِٓۖ",
+     "inclined_letters": [
+      "ح"
+     ],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "حَمِٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "حۭمٓۚ",
+     "inclined_letters": [
+      "ح"
+     ],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "حۭمٓۚ",
+     "inclined_letters": [
+      "ح"
+     ],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "حمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "حمٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [
+    "ح"
+   ],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "عسق",
+   "author_class": "غير محسوم",
+   "per_narration": {
+    "حفص": {
+     "written": "عٓسٓقٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "عٓسٓقٓ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "عَٓسِٓقَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "عَٓسِٓقَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "عٓسٓقٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "عٓسٓقٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "عٓسٓقٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "عٓسٓقٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "ق",
+   "author_class": "طائرة",
+   "per_narration": {
+    "حفص": {
+     "written": "قٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "قٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "قَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "قَٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "قٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "قٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "قٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "قٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [],
+   "inclined_subset_of_hayy_tahir": true
+  },
+  {
+   "letters": "ن",
+   "author_class": "طائرة",
+   "per_narration": {
+    "حفص": {
+     "written": "نٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "شعبة": {
+     "written": "نٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "ورش": {
+     "written": "نُّٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قالون": {
+     "written": "نُٓۖ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "الدوري": {
+     "written": "نٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "السوسي": {
+     "written": "نٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "البزي": {
+     "written": "نٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    },
+    "قنبل": {
+     "written": "نٓۚ",
+     "inclined_letters": [],
+     "shadda_on_last": false
+    }
+   },
+   "inclined_anywhere": [],
+   "inclined_subset_of_hayy_tahir": true
+  }
+ ],
+ "all_inclined_letters_in_hayy_tahir": true,
+ "noon_68_1": {
+  "حفص": "نٓۚ",
+  "شعبة": "نٓۚ",
+  "ورش": "نُّٓۖ",
+  "قالون": "نُٓۖ",
+  "الدوري": "نٓۚ",
+  "السوسي": "نٓۚ",
+  "البزي": "نٓۚ",
+  "قنبل": "نٓۚ"
+ },
+ "finding": "كل حرف من حروف صُفْر انمال أو تقلّل بأي رواية من الثمانية هو من مجموعة «حي طهر» (أسماء على حرفين آخرها ألف). الراء في الر والمر بتنمال/بتتقلّل عند شعبة وورش والدوري والسوسي، وبتضل مفتوحة عند حفص وقالون والبزي وقنبل. وورش بيكتب «نُّٓ» بالقلم ٦٨:١ بشدّة: النون بتدغم بواو «والقلم»، وحفص بيظهرها. يعني بالأداء، ن بتغوص عند ورش.",
+ "status": "VERIFIED RECITATIONAL FACT"
+}

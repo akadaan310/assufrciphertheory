@@ -1,0 +1,1692 @@
+{
+ "id": "EXP-10",
+ "question": "هل «الافتتاحية آية مستقلة» خاصية للنص ولا للعدّ؟ وكيف بتظهر حروف صُفْر بكل رواية؟",
+ "narration_totals": {
+  "حفص": 6236,
+  "شعبة": 6236,
+  "ورش": 6214,
+  "قالون": 6214,
+  "الدوري": 6217,
+  "السوسي": 6217,
+  "البزي": 6220,
+  "قنبل": 6220
+ },
+ "standalone_openings_per_narration": {
+  "حفص": 19,
+  "شعبة": 19,
+  "ورش": 0,
+  "قالون": 0,
+  "الدوري": 0,
+  "السوسي": 0,
+  "البزي": 0,
+  "قنبل": 0
+ },
+ "rule_R1_agreement_per_count": {
+  "حفص": 17,
+  "شعبة": 17,
+  "ورش": 8,
+  "قالون": 8,
+  "الدوري": 8,
+  "السوسي": 8,
+  "البزي": 8,
+  "قنبل": 8
+ },
+ "rum_1_in_basri_count": "الٓمٓۚ غُلِبَتِ اِ۬لرُّومُ",
+ "data": [
+  {
+   "id": "STAR-01",
+   "sura": 2,
+   "name": "البقرة",
+   "opening": "الم",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 286
+    },
+    "شعبة": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 286
+    },
+    "ورش": {
+     "verse_1": "أَلَٓمِّٓۖ ذَٰلِكَ اَ۬لْكِتَٰبُ لَا رَيْبَۖ فِيهِ هُدىٗ لِّلْمُتَّقِينَ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 285
+    },
+    "قالون": {
+     "verse_1": "أَلَٓمِّٓۖ ذَٰلِكَ اَ۬لْكِتَٰبُ لَا رَيْبَۖ فِيهِ هُدىٗ لِّلْمُتَّقِينَ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 285
+    },
+    "الدوري": {
+     "verse_1": "الٓمٓۚ ذَٰلِكَ اَ۬لۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۛ هُدٗى لِّلۡمُتَّقِينَ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 285
+    },
+    "السوسي": {
+     "verse_1": "الٓمٓۚ ذَٰلِكَ اَ۬لۡكِتَٰبُ لَا رَيۡبَۛ فِيهۛ هُّدٗى لِّلۡمُتَّقِينَ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 285
+    },
+    "البزي": {
+     "verse_1": "الٓمٓۚ ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۦۛ هُدٗى لِّلۡمُتَّقِينَ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 285
+    },
+    "قنبل": {
+     "verse_1": "الٓمٓۚ ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۦۛ هُدٗى لِّلۡمُتَّقِينَ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 285
+    }
+   }
+  },
+  {
+   "id": "STAR-02",
+   "sura": 3,
+   "name": "آل عمران",
+   "opening": "الم",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 200
+    },
+    "شعبة": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 200
+    },
+    "ورش": {
+     "verse_1": "أَلَٓمِّٓۖ اَ۬للَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ اَ۬لْحَيُّ اُ۬لْقَيُّومُ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 200
+    },
+    "قالون": {
+     "verse_1": "أَلَٓمِّٓۖ اَ۬للَّهُ لَا إِلَٰهَ إِلَّا هُوَۖ اَ۬لْحَيُّ اُ۬لْقَيُّومُ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 200
+    },
+    "الدوري": {
+     "verse_1": "الٓمٓۚ اَ۬للَّهُ لَآ إِلَٰهَ إِلَّا هُوَ اَ۬لۡحَيُّ اُ۬لۡقَيُّومُ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 200
+    },
+    "السوسي": {
+     "verse_1": "الٓمٓۚ اَ۬للَّهُ لَا إِلَٰهَ إِلَّا هُوَ اَ۬لۡحَيُّ اُ۬لۡقَيُّومُ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 200
+    },
+    "البزي": {
+     "verse_1": "الٓمٓۚ ٱللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 200
+    },
+    "قنبل": {
+     "verse_1": "الٓمٓۚ ٱللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُ",
+     "standalone": false,
+     "words_in_verse_1": 8,
+     "ayahs_in_sura": 200
+    }
+   }
+  },
+  {
+   "id": "STAR-03",
+   "sura": 7,
+   "name": "الأعراف",
+   "opening": "المص",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓمٓصٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 206
+    },
+    "شعبة": {
+     "verse_1": "الٓمٓصٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 206
+    },
+    "ورش": {
+     "verse_1": "اَلَٓمِّٓصَٓۖ كِتَٰبٌ اُنزِلَ إِلَيْكَ فَلَا يَكُن فِے صَدْرِكَ حَرَجٞ مِّنْهُ لِتُنذِرَ بِهِۦ وَذِكْر۪ىٰ لِلْمُومِنِينَۖ",
+     "standalone": false,
+     "words_in_verse_1": 14,
+     "ayahs_in_sura": 206
+    },
+    "قالون": {
+     "verse_1": "أَلَٓمِّٓصَٓۖ كِتَٰبٌ أُنزِلَ إِلَيْكَ فَلَا يَكُن فِے صَدْرِكَ حَرَجٞ مِّنْهُ لِتُنذِرَ بِهِۦ وَذِكْرَىٰ لِلْمُؤْمِنِينَۖ",
+     "standalone": false,
+     "words_in_verse_1": 14,
+     "ayahs_in_sura": 206
+    },
+    "الدوري": {
+     "verse_1": "الٓمٓصٓۚ كِتَٰبٌ أُنزِلَ إِلَيۡكَ فَلَا يَكُن فِي صَدۡرِكَ حَرَجٞ مِّنۡهُ لِتُنذِرَ بِهِۦ وَذِكۡر۪يٰ لِلۡمُؤۡمِنِينَ",
+     "standalone": false,
+     "words_in_verse_1": 14,
+     "ayahs_in_sura": 206
+    },
+    "السوسي": {
+     "verse_1": "الٓمٓصٓۚ كِتَٰبٌ أُنزِلَ إِلَيۡكَ فَلَا يَكُن فِي صَدۡرِكَ حَرَجٞ مِّنۡهُ لِتُنذِرَ بِهِۦ وَذِكۡر۪يٰ لِلۡمُومِنِينَ",
+     "standalone": false,
+     "words_in_verse_1": 14,
+     "ayahs_in_sura": 206
+    },
+    "البزي": {
+     "verse_1": "الٓمٓصٓۚ كِتَٰبٌ أُنزِلَ إِلَيۡكَ فَلَا يَكُن فِي صَدۡرِكَ حَرَجٞ مِّنۡهُۥ لِتُنذِرَ بِهِۦ وَذِكۡرَىٰ لِلۡمُؤۡمِنِينَ",
+     "standalone": false,
+     "words_in_verse_1": 14,
+     "ayahs_in_sura": 206
+    },
+    "قنبل": {
+     "verse_1": "الٓمٓصٓۚ كِتَٰبٌ أُنزِلَ إِلَيۡكَ فَلَا يَكُن فِي صَدۡرِكَ حَرَجٞ مِّنۡهُۥ لِتُنذِرَ بِهِۦ وَذِكۡرَىٰ لِلۡمُؤۡمِنِينَ",
+     "standalone": false,
+     "words_in_verse_1": 14,
+     "ayahs_in_sura": 206
+    }
+   }
+  },
+  {
+   "id": "STAR-04",
+   "sura": 10,
+   "name": "يونس",
+   "opening": "الر",
+   "author_class": "مغوصة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 109
+    },
+    "شعبة": {
+     "verse_1": "الٓرٜۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 109
+    },
+    "ورش": {
+     "verse_1": "أَلَٓر۪ۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْحَكِيمِۖ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 109
+    },
+    "قالون": {
+     "verse_1": "أَلَٓرَۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْحَكِيمِۖ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 109
+    },
+    "الدوري": {
+     "verse_1": "الٓر۪ۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 109
+    },
+    "السوسي": {
+     "verse_1": "الٓر۪ۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 109
+    },
+    "البزي": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 109
+    },
+    "قنبل": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 109
+    }
+   }
+  },
+  {
+   "id": "STAR-05",
+   "sura": 11,
+   "name": "هود",
+   "opening": "الر",
+   "author_class": "مغوصة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓرۚ كِتَٰبٌ أُحۡكِمَتۡ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتۡ مِن لَّدُنۡ حَكِيمٍ خَبِيرٍ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 123
+    },
+    "شعبة": {
+     "verse_1": "الٓرٜۚ كِتَٰبٌ أُحۡكِمَتۡ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتۡ مِن لَّدُنۡ حَكِيمٍ خَبِيرٍ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 123
+    },
+    "ورش": {
+     "verse_1": "أَلَٓر۪ۖ كِتَٰبٌ ا۟حْكِمَتَ اٰيَٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 121
+    },
+    "قالون": {
+     "verse_1": "أَلَٓرَۖ كِتَٰبٌ أُحْكِمَتْ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 121
+    },
+    "الدوري": {
+     "verse_1": "الٓر۪ۚ كِتَٰبٌ أُحۡكِمَتۡ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتۡ مِن لَّدُنۡ حَكِيمٍ خَبِيرٍ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 122
+    },
+    "السوسي": {
+     "verse_1": "الٓر۪ۚ كِتَٰبٌ أُحۡكِمَتۡ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتۡ مِن لَّدُنۡ حَكِيمٍ خَبِيرٍ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 122
+    },
+    "البزي": {
+     "verse_1": "الٓرۚ كِتَٰبٌ أُحۡكِمَتۡ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتۡ مِن لَّدُنۡ حَكِيمٍ خَبِيرٍ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 121
+    },
+    "قنبل": {
+     "verse_1": "الٓرۚ كِتَٰبٌ أُحۡكِمَتۡ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتۡ مِن لَّدُنۡ حَكِيمٍ خَبِيرٍ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 121
+    }
+   }
+  },
+  {
+   "id": "STAR-06",
+   "sura": 12,
+   "name": "يوسف",
+   "opening": "الر",
+   "author_class": "مغوصة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 111
+    },
+    "شعبة": {
+     "verse_1": "الٓرٜۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 111
+    },
+    "ورش": {
+     "verse_1": "أَلَٓر۪ۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْمُبِينِۖ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 111
+    },
+    "قالون": {
+     "verse_1": "أَلَٓرَۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْمُبِينِۖ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 111
+    },
+    "الدوري": {
+     "verse_1": "الٓر۪ۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 111
+    },
+    "السوسي": {
+     "verse_1": "الٓر۪ۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 111
+    },
+    "البزي": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 111
+    },
+    "قنبل": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 111
+    }
+   }
+  },
+  {
+   "id": "STAR-07",
+   "sura": 13,
+   "name": "الرعد",
+   "opening": "المر",
+   "author_class": "مغوصة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓمٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِۗ وَٱلَّذِيٓ أُنزِلَ إِلَيۡكَ مِن رَّبِّكَ ٱلۡحَقُّ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يُؤۡمِنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 15,
+     "ayahs_in_sura": 43
+    },
+    "شعبة": {
+     "verse_1": "الٓمٓرٜۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِۗ وَٱلَّذِيٓ أُنزِلَ إِلَيۡكَ مِن رَّبِّكَ ٱلۡحَقُّ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يُؤۡمِنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 15,
+     "ayahs_in_sura": 43
+    },
+    "ورش": {
+     "verse_1": "أَلَٓمِّٓر۪ۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِۖ وَالذِےٓ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ اَ۬لْحَقُّۖ وَلَٰكِنَّ أَكْثَرَ اَ۬لنَّاسِ لَا يُومِنُونَۖ",
+     "standalone": false,
+     "words_in_verse_1": 15,
+     "ayahs_in_sura": 44
+    },
+    "قالون": {
+     "verse_1": "أَلَٓمِّٓرَۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِۖ وَالذِے أُنزِلَ إِلَيْكَ مِن رَّبِّكَ اَ۬لْحَقُّۖ وَلَٰكِنَّ أَكْثَرَ اَ۬لنَّاسِ لَا يُؤْمِنُونَۖ",
+     "standalone": false,
+     "words_in_verse_1": 15,
+     "ayahs_in_sura": 44
+    },
+    "الدوري": {
+     "verse_1": "الٓمٓر۪ۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِۗ وَاَلَّذِيٓ أُنزِلَ إِلَيۡكَ مِن رَّبِّكَ اَ۬لۡحَقُّ وَلَٰكِنَّ أَكۡثَرَ اَ۬لنّ۪اسِ لَا يُؤۡمِنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 15,
+     "ayahs_in_sura": 44
+    },
+    "السوسي": {
+     "verse_1": "الٓمٓر۪ۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِۗ وَاَلَّذِي أُنزِلَ إِلَيۡكَ مِن رَّبِّكَ اَ۬لۡحَقُّ وَلَٰكِنَّ أَكۡثَرَ اَ۬لنَّاسِ لَا يُومِنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 15,
+     "ayahs_in_sura": 44
+    },
+    "البزي": {
+     "verse_1": "الٓمٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِۗ وَٱلَّذِي أُنزِلَ إِلَيۡكَ مِن رَّبِّكَ ٱلۡحَقُّ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يُؤۡمِنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 15,
+     "ayahs_in_sura": 44
+    },
+    "قنبل": {
+     "verse_1": "الٓمٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِۗ وَٱلَّذِي أُنزِلَ إِلَيۡكَ مِن رَّبِّكَ ٱلۡحَقُّ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يُؤۡمِنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 15,
+     "ayahs_in_sura": 44
+    }
+   }
+  },
+  {
+   "id": "STAR-08",
+   "sura": 14,
+   "name": "إبراهيم",
+   "opening": "الر",
+   "author_class": "مغوصة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓرۚ كِتَٰبٌ أَنزَلۡنَٰهُ إِلَيۡكَ لِتُخۡرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ بِإِذۡنِ رَبِّهِمۡ إِلَىٰ صِرَٰطِ ٱلۡعَزِيزِ ٱلۡحَمِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 16,
+     "ayahs_in_sura": 52
+    },
+    "شعبة": {
+     "verse_1": "الٓرٜۚ كِتَٰبٌ أَنزَلۡنَٰهُ إِلَيۡكَ لِتُخۡرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ بِإِذۡنِ رَبِّهِمۡ إِلَىٰ صِرَٰطِ ٱلۡعَزِيزِ ٱلۡحَمِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 16,
+     "ayahs_in_sura": 52
+    },
+    "ورش": {
+     "verse_1": "أَلَٓر۪ۖ كِتَٰبٌ اَنزَلْنَٰهُ إِلَيْكَ لِتُخْرِجَ اَ۬لنَّاسَ مِنَ اَ۬لظُّلُمَٰتِ إِلَى اَ۬لنُّورِ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 54
+    },
+    "قالون": {
+     "verse_1": "أَلَٓرَۖ كِتَٰبٌ أَنزَلْنَٰهُ إِلَيْكَ لِتُخْرِجَ اَ۬لنَّاسَ مِنَ اَ۬لظُّلُمَٰتِ إِلَى اَ۬لنُّورِ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 54
+    },
+    "الدوري": {
+     "verse_1": "الٓر۪ۚ كِتَٰبٌ أَنزَلۡنَٰهُ إِلَيۡكَ لِتُخۡرِجَ اَ۬لنَّاسَ مِنَ اَ۬لظُّلُمَٰتِ إِلَى اَ۬لنُّورِ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 54
+    },
+    "السوسي": {
+     "verse_1": "الٓر۪ۚ كِتَٰبٌ أَنزَلۡنَٰهُ إِلَيۡكَ لِتُخۡرِجَ اَ۬لنَّاسَ مِنَ اَ۬لظُّلُمَٰتِ إِلَى اَ۬لنُّورِ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 54
+    },
+    "البزي": {
+     "verse_1": "الٓرۚ كِتَٰبٌ أَنزَلۡنَٰهُۥ إِلَيۡكَ لِتُخۡرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 54
+    },
+    "قنبل": {
+     "verse_1": "الٓرۚ كِتَٰبٌ أَنزَلۡنَٰهُۥ إِلَيۡكَ لِتُخۡرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 54
+    }
+   }
+  },
+  {
+   "id": "STAR-09",
+   "sura": 15,
+   "name": "الحجر",
+   "opening": "الر",
+   "author_class": "مغوصة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ وَقُرۡءَانٖ مُّبِينٖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "شعبة": {
+     "verse_1": "الٓرٜۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ وَقُرۡءَانٖ مُّبِينٖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "ورش": {
+     "verse_1": "أَلَٓر۪ۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ وَقُرْءَانٖ مُّبِينٖۖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "قالون": {
+     "verse_1": "أَلَٓرَۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ وَقُرْءَانٖ مُّبِينٖۖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "الدوري": {
+     "verse_1": "الٓر۪ۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ وَقُرۡءَانٖ مُّبِينٖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "السوسي": {
+     "verse_1": "الٓر۪ۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ وَقُرۡءَانٖ مُّبِينٖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "البزي": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ وَقُرَانٖ مُّبِينٖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "قنبل": {
+     "verse_1": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ وَقُرَانٖ مُّبِينٖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    }
+   }
+  },
+  {
+   "id": "STAR-10",
+   "sura": 19,
+   "name": "مريم",
+   "opening": "كهيعص",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "كٓهيعٓصٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 98
+    },
+    "شعبة": {
+     "verse_1": "كٓهٜيٜعٓصٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 98
+    },
+    "ورش": {
+     "verse_1": "كَٓه۪ي۪عَٓصَٓۖ ذِكْرُ رَحْمَتِ رَبِّكَ عَبْدَهُۥ زَكَرِيَّآءَ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "قالون": {
+     "verse_1": "كَٓهَيَعَٓصَٓۖ ذِكْرُ رَحْمَتِ رَبِّكَ عَبْدَهُۥ زَكَرِيَّآءَ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "الدوري": {
+     "verse_1": "كٓه۪يعٓصٓۚ ذِّكۡرُ رَحۡمَتِ رَبِّكَ عَبۡدَهُۥ زَكَرِيَّآءَ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 98
+    },
+    "السوسي": {
+     "verse_1": "كٓه۪يعٓصٓۚ ذِّكۡر رَّحۡمَتِ رَبِّكَ عَبۡدَهُۥ زَكَرِيَّآءَ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 98
+    },
+    "البزي": {
+     "verse_1": "كٓهيعٓصٓۚ ذِكۡرُ رَحۡمَتِ رَبِّكَ عَبۡدَهُۥ زَكَرِيَّآءَ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    },
+    "قنبل": {
+     "verse_1": "كٓهيعٓصٓۚ ذِكۡرُ رَحۡمَتِ رَبِّكَ عَبۡدَهُۥ زَكَرِيَّآءَ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 99
+    }
+   }
+  },
+  {
+   "id": "STAR-11",
+   "sura": 20,
+   "name": "طه",
+   "opening": "طه",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "طه",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 135
+    },
+    "شعبة": {
+     "verse_1": "طٜهٜ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 135
+    },
+    "ورش": {
+     "verse_1": "طَه۪ۖ مَآ أَنزَلْنَا عَلَيْكَ اَ۬لْقُرْءَانَ لِتَشْق۪ىٰٓ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 134
+    },
+    "قالون": {
+     "verse_1": "طَهَۖ مَا أَنزَلْنَا عَلَيْكَ اَ۬لْقُرْءَانَ لِتَشْقَىٰ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 134
+    },
+    "الدوري": {
+     "verse_1": "طه۪ۚ مَآ أَنزَلۡنَا عَلَيۡكَ اَ۬لۡقُرۡءَانَ لِتَشۡقۭيٰٓ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 134
+    },
+    "السوسي": {
+     "verse_1": "طه۪ۚ مَا أَنزَلۡنَا عَلَيۡكَ اَ۬لۡقُرۡءَانَ لِتَشۡقۭيٰ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 134
+    },
+    "البزي": {
+     "verse_1": "طهۚ مَا أَنزَلۡنَا عَلَيۡكَ ٱلۡقُرَانَ لِتَشۡقَىٰ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 134
+    },
+    "قنبل": {
+     "verse_1": "طهۚ مَا أَنزَلۡنَا عَلَيۡكَ ٱلۡقُرَانَ لِتَشۡقَىٰ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 134
+    }
+   }
+  },
+  {
+   "id": "STAR-12",
+   "sura": 26,
+   "name": "الشعراء",
+   "opening": "طسم",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "طسٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 227
+    },
+    "شعبة": {
+     "verse_1": "طٜسٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 227
+    },
+    "ورش": {
+     "verse_1": "طَسِٓمِّٓۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْمُبِينِۖ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 226
+    },
+    "قالون": {
+     "verse_1": "طَسِٓمِّٓۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْمُبِينِۖ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 226
+    },
+    "الدوري": {
+     "verse_1": "طسٓمٓۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 227
+    },
+    "السوسي": {
+     "verse_1": "طسٓمٓۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 227
+    },
+    "البزي": {
+     "verse_1": "طسٓمٓۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 226
+    },
+    "قنبل": {
+     "verse_1": "طسٓمٓۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 226
+    }
+   }
+  },
+  {
+   "id": "STAR-13",
+   "sura": 27,
+   "name": "النمل",
+   "opening": "طس",
+   "author_class": "مغوصة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "طسٓۚ تِلۡكَ ءَايَٰتُ ٱلۡقُرۡءَانِ وَكِتَابٖ مُّبِينٍ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 93
+    },
+    "شعبة": {
+     "verse_1": "طٜسٓۚ تِلۡكَ ءَايَٰتُ ٱلۡقُرۡءَانِ وَكِتَابٖ مُّبِينٍ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 93
+    },
+    "ورش": {
+     "verse_1": "طَسِٓۖ تِلْكَ ءَايَٰتُ اُ۬لْقُرْءَانِ وَكِتَابٖ مُّبِينٍۖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 95
+    },
+    "قالون": {
+     "verse_1": "طَسِٓۖ تِلْكَ ءَايَٰتُ اُ۬لْقُرْءَانِ وَكِتَابٖ مُّبِينٍۖ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 95
+    },
+    "الدوري": {
+     "verse_1": "طسٓۚ تِلۡكَ ءَايَٰتُ اُ۬لۡقُرۡءَانِ وَكِتَابٖ مُّبِينٍ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 95
+    },
+    "السوسي": {
+     "verse_1": "طسٓۚ تِلۡكَ ءَايَٰتُ اُ۬لۡقُرۡءَانِ وَكِتَابٖ مُّبِينٍ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 95
+    },
+    "البزي": {
+     "verse_1": "طسٓۚ تِلۡكَ ءَايَٰتُ ٱلۡقُرَانِ وَكِتَابٖ مُّبِينٍ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 95
+    },
+    "قنبل": {
+     "verse_1": "طسٓۚ تِلۡكَ ءَايَٰتُ ٱلۡقُرَانِ وَكِتَابٖ مُّبِينٍ",
+     "standalone": false,
+     "words_in_verse_1": 6,
+     "ayahs_in_sura": 95
+    }
+   }
+  },
+  {
+   "id": "STAR-14",
+   "sura": 28,
+   "name": "القصص",
+   "opening": "طسم",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "طسٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 88
+    },
+    "شعبة": {
+     "verse_1": "طٜسٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 88
+    },
+    "ورش": {
+     "verse_1": "طَسِٓمِّٓۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْمُبِينِۖ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 88
+    },
+    "قالون": {
+     "verse_1": "طَسِٓمِّٓۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْمُبِينِۖ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 88
+    },
+    "الدوري": {
+     "verse_1": "طسٓمٓۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 88
+    },
+    "السوسي": {
+     "verse_1": "طسٓمٓۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡمُبِين",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 88
+    },
+    "البزي": {
+     "verse_1": "طسٓمٓۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 88
+    },
+    "قنبل": {
+     "verse_1": "طسٓمٓۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 88
+    }
+   }
+  },
+  {
+   "id": "STAR-15",
+   "sura": 29,
+   "name": "العنكبوت",
+   "opening": "الم",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 69
+    },
+    "شعبة": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 69
+    },
+    "ورش": {
+     "verse_1": "أَلَٓمِّٓۖ اَحَسِبَ اَ۬لنَّاسُ أَنْ يُّتْرَكُوٓاْ أَنْ يَّقُولُوٓاْ ءَامَنَّا وَهُمْ لَا يُفْتَنُونَۖ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 69
+    },
+    "قالون": {
+     "verse_1": "أَلَٓمِّٓۖ أَحَسِبَ اَ۬لنَّاسُ أَنْ يُّتْرَكُواْ أَنْ يَّقُولُواْ ءَامَنَّا وَهُمْ لَا يُفْتَنُونَۖ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 69
+    },
+    "الدوري": {
+     "verse_1": "الٓمٓۚ أَحَسِبَ اَ۬لنَّاسُ أَن يُتۡرَكُوٓاْ أَن يَقُولُوٓاْ ءَامَنَّا وَهُمۡ لَا يُفۡتَنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 69
+    },
+    "السوسي": {
+     "verse_1": "الٓمٓۚ أَحَسِبَ اَ۬لنَّاسُ أَن يُتۡرَكُواْ أَن يَقُولُواْ ءَامَنَّا وَهُمۡ لَا يُفۡتَنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 69
+    },
+    "البزي": {
+     "verse_1": "الٓمٓۚ أَحَسِبَ ٱلنَّاسُ أَن يُتۡرَكُواْ أَن يَقُولُواْ ءَامَنَّا وَهُمُۥ لَا يُفۡتَنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 69
+    },
+    "قنبل": {
+     "verse_1": "الٓمٓۚ أَحَسِبَ ٱلنَّاسُ أَن يُتۡرَكُواْ أَن يَقُولُواْ ءَامَنَّا وَهُمُۥ لَا يُفۡتَنُونَ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 69
+    }
+   }
+  },
+  {
+   "id": "STAR-16",
+   "sura": 30,
+   "name": "الروم",
+   "opening": "الم",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 60
+    },
+    "شعبة": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 60
+    },
+    "ورش": {
+     "verse_1": "أَلَٓمِّٓۖ غُلِبَتِ اِ۬لرُّومُ فِےٓ أَدْنَى اَ۬لَارْضِ وَهُم مِّنۢ بَعْدِ غَلَبِهِمْ سَيَغْلِبُونَ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 59
+    },
+    "قالون": {
+     "verse_1": "أَلَٓمِّٓۖ غُلِبَتِ اِ۬لرُّومُ فِے أَدْنَى اَ۬لْأَرْضِ وَهُم مِّنۢ بَعْدِ غَلَبِهِمْ سَيَغْلِبُونَ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 59
+    },
+    "الدوري": {
+     "verse_1": "الٓمٓۚ غُلِبَتِ اِ۬لرُّومُ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 60
+    },
+    "السوسي": {
+     "verse_1": "الٓمٓۚ غُلِبَتِ اِ۬لرُّومُ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 60
+    },
+    "البزي": {
+     "verse_1": "الٓمٓۚ غُلِبَتِ ٱلرُّومُ فِي أَدۡنَى ٱلۡأَرۡضِ وَهُمُۥ مِنۢ بَعۡدِ غَلَبِهِمُۥ سَيَغۡلِبُونَ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 59
+    },
+    "قنبل": {
+     "verse_1": "الٓمٓۚ غُلِبَتِ ٱلرُّومُ فِي أَدۡنَى ٱلۡأَرۡضِ وَهُمُۥ مِنۢ بَعۡدِ غَلَبِهِمُۥ سَيَغۡلِبُونَ",
+     "standalone": false,
+     "words_in_verse_1": 11,
+     "ayahs_in_sura": 59
+    }
+   }
+  },
+  {
+   "id": "STAR-17",
+   "sura": 31,
+   "name": "لقمان",
+   "opening": "الم",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 34
+    },
+    "شعبة": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 34
+    },
+    "ورش": {
+     "verse_1": "أَلَٓمِّٓۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 33
+    },
+    "قالون": {
+     "verse_1": "أَلَٓمِّٓۖ تِلْكَ ءَايَٰتُ اُ۬لْكِتَٰبِ اِ۬لْحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 33
+    },
+    "الدوري": {
+     "verse_1": "الٓمٓۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 33
+    },
+    "السوسي": {
+     "verse_1": "الٓمٓۚ تِلۡكَ ءَايَٰتُ اُ۬لۡكِتَٰبِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 33
+    },
+    "البزي": {
+     "verse_1": "الٓمٓۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 33
+    },
+    "قنبل": {
+     "verse_1": "الٓمٓۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 33
+    }
+   }
+  },
+  {
+   "id": "STAR-18",
+   "sura": 32,
+   "name": "السجدة",
+   "opening": "الم",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 30
+    },
+    "شعبة": {
+     "verse_1": "الٓمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 30
+    },
+    "ورش": {
+     "verse_1": "اَلَٓمِّٓۖ تَنزِيلُ اُ۬لْكِتَٰبِ لَا رَيْبَ فِيهِ مِن رَّبِّ اِ۬لْعَٰلَمِينَۖ",
+     "standalone": false,
+     "words_in_verse_1": 9,
+     "ayahs_in_sura": 30
+    },
+    "قالون": {
+     "verse_1": "أَلَٓمِّٓۖ تَنزِيلُ اُ۬لْكِتَٰبِ لَا رَيْبَ فِيهِ مِن رَّبِّ اِ۬لْعَٰلَمِينَۖ",
+     "standalone": false,
+     "words_in_verse_1": 9,
+     "ayahs_in_sura": 30
+    },
+    "الدوري": {
+     "verse_1": "الٓمٓۚ تَنزِيلُ اُ۬لۡكِتَٰبِ لَا رَيۡبَ فِيهِ مِن رَّبِّ اِ۬لۡعَٰلَمِينَ",
+     "standalone": false,
+     "words_in_verse_1": 9,
+     "ayahs_in_sura": 30
+    },
+    "السوسي": {
+     "verse_1": "الٓمٓۚ تَنزِيلُ اُ۬لۡكِتَٰبِ لَا رَيۡبَ فِيهِ مِن رَّبِّ اِ۬لۡعَٰلَمِينَ",
+     "standalone": false,
+     "words_in_verse_1": 9,
+     "ayahs_in_sura": 30
+    },
+    "البزي": {
+     "verse_1": "الٓمٓۚ تَنزِيلُ ٱلۡكِتَٰبِ لَا رَيۡبَ فِيهِۦ مِن رَّبِّ ٱلۡعَٰلَمِينَ",
+     "standalone": false,
+     "words_in_verse_1": 9,
+     "ayahs_in_sura": 30
+    },
+    "قنبل": {
+     "verse_1": "الٓمٓۚ تَنزِيلُ ٱلۡكِتَٰبِ لَا رَيۡبَ فِيهِۦ مِن رَّبِّ ٱلۡعَٰلَمِينَ",
+     "standalone": false,
+     "words_in_verse_1": 9,
+     "ayahs_in_sura": 30
+    }
+   }
+  },
+  {
+   "id": "STAR-19",
+   "sura": 36,
+   "name": "يس",
+   "opening": "يس",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "يسٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 83
+    },
+    "شعبة": {
+     "verse_1": "يٜسٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 83
+    },
+    "ورش": {
+     "verse_1": "يَسِٓۖ وَالْقُرْءَانِ اِ۬لْحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 82
+    },
+    "قالون": {
+     "verse_1": "يَسِٓۖ وَالْقُرْءَانِ اِ۬لْحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 82
+    },
+    "الدوري": {
+     "verse_1": "يسٓۚ وَاَلۡقُرۡءَانِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 82
+    },
+    "السوسي": {
+     "verse_1": "يسٓۚ وَاَلۡقُرۡءَانِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 82
+    },
+    "البزي": {
+     "verse_1": "يسٓۚ وَٱلۡقُرَانِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 82
+    },
+    "قنبل": {
+     "verse_1": "يسٓۚ وَٱلۡقُرَانِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 82
+    }
+   }
+  },
+  {
+   "id": "STAR-20",
+   "sura": 38,
+   "name": "ص",
+   "opening": "ص",
+   "author_class": "مغوصة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "صٓۚ وَٱلۡقُرۡءَانِ ذِي ٱلذِّكۡرِ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 88
+    },
+    "شعبة": {
+     "verse_1": "صٓۚ وَٱلۡقُرۡءَانِ ذِي ٱلذِّكۡرِ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 88
+    },
+    "ورش": {
+     "verse_1": "صَٓۖ وَالْقُرْءَانِ ذِے اِ۬لذِّكْرِۖ بَلِ اِ۬لذِينَ كَفَرُواْ فِے عِزَّةٖ وَشِقَاقٖۖ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 86
+    },
+    "قالون": {
+     "verse_1": "صَٓۖ وَالْقُرْءَانِ ذِے اِ۬لذِّكْرِۖ بَلِ اِ۬لذِينَ كَفَرُواْ فِے عِزَّةٖ وَشِقَاقٖۖ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 86
+    },
+    "الدوري": {
+     "verse_1": "صٓۚ وَاَلۡقُرۡءَانِ ذِي اِ۬لذِّكۡرِ بَلِ اِ۬لَّذِينَ كَفَرُواْ فِي عِزَّةٖ وَشِقَاقٖ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 86
+    },
+    "السوسي": {
+     "verse_1": "صٓۚ وَاَلۡقُرۡءَانِ ذِي اِ۬لذِّكۡرِ بَلِ اِ۬لَّذِينَ كَفَرُواْ فِي عِزَّةٖ وَشِقَاقٖ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 86
+    },
+    "البزي": {
+     "verse_1": "صٓۚ وَٱلۡقُرَانِ ذِي ٱلذِّكۡرِ بَلِ ٱلَّذِينَ كَفَرُواْ فِي عِزَّةٖ وَشِقَاقٖ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 86
+    },
+    "قنبل": {
+     "verse_1": "صٓۚ وَٱلۡقُرَانِ ذِي ٱلذِّكۡرِ بَلِ ٱلَّذِينَ كَفَرُواْ فِي عِزَّةٖ وَشِقَاقٖ",
+     "standalone": false,
+     "words_in_verse_1": 10,
+     "ayahs_in_sura": 86
+    }
+   }
+  },
+  {
+   "id": "STAR-21",
+   "sura": 40,
+   "name": "غافر",
+   "opening": "حم",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "حمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 85
+    },
+    "شعبة": {
+     "verse_1": "حٜمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 85
+    },
+    "ورش": {
+     "verse_1": "ح۪مِٓۖ تَنزِيلُ اُ۬لْكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لْعَزِيزِ اِ۬لْعَلِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 84
+    },
+    "قالون": {
+     "verse_1": "حَمِٓۖ تَنزِيلُ اُ۬لْكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لْعَزِيزِ اِ۬لْعَلِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 84
+    },
+    "الدوري": {
+     "verse_1": "حۭمٓۚ تَنزِيلُ اُ۬لۡكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لۡعَزِيزِ اِ۬لۡعَلِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 84
+    },
+    "السوسي": {
+     "verse_1": "حۭمٓۚ تَنزِيلُ اُ۬لۡكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لۡعَزِيزِ اِ۬لۡعَلِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 84
+    },
+    "البزي": {
+     "verse_1": "حمٓۚ تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡعَلِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 84
+    },
+    "قنبل": {
+     "verse_1": "حمٓۚ تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡعَلِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 84
+    }
+   }
+  },
+  {
+   "id": "STAR-22",
+   "sura": 41,
+   "name": "فصلت",
+   "opening": "حم",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "حمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 54
+    },
+    "شعبة": {
+     "verse_1": "حٜمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 54
+    },
+    "ورش": {
+     "verse_1": "ح۪مِٓۖ تَنزِيلٞ مِّنَ اَ۬لرَّحْمَٰنِ اِ۬لرَّحِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 53
+    },
+    "قالون": {
+     "verse_1": "حَمِٓۖ تَنزِيلٞ مِّنَ اَ۬لرَّحْمَٰنِ اِ۬لرَّحِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 53
+    },
+    "الدوري": {
+     "verse_1": "حۭمٓۚ تَنزِيلٞ مِّنَ اَ۬لرَّحۡمَٰنِ اِ۬لرَّحِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 53
+    },
+    "السوسي": {
+     "verse_1": "حۭمٓۚ تَنزِيلٞ مِّنَ اَ۬لرَّحۡمَٰنِ اِ۬لرَّحِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 53
+    },
+    "البزي": {
+     "verse_1": "حمٓۚ تَنزِيلٞ مِّنَ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 53
+    },
+    "قنبل": {
+     "verse_1": "حمٓۚ تَنزِيلٞ مِّنَ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 5,
+     "ayahs_in_sura": 53
+    }
+   }
+  },
+  {
+   "id": "STAR-23",
+   "sura": 42,
+   "name": "الشورى",
+   "opening": "حم عسق",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "حمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 53
+    },
+    "شعبة": {
+     "verse_1": "حٜمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 53
+    },
+    "ورش": {
+     "verse_1": "ح۪مِٓ عَٓسِٓقَٓۖ كَذَٰلِكَ يُوحِےٓ إِلَيْكَ وَإِلَى اَ۬لذِينَ مِن قَبْلِكَ اَ۬للَّهُ اُ۬لْعَزِيزُ اُ۬لْحَكِيمُۖ",
+     "standalone": false,
+     "words_in_verse_1": 12,
+     "ayahs_in_sura": 50
+    },
+    "قالون": {
+     "verse_1": "حَمِٓ عَٓسِٓقَٓۖ كَذَٰلِكَ يُوحِے إِلَيْكَ وَإِلَى اَ۬لذِينَ مِن قَبْلِكَ اَ۬للَّهُ اُ۬لْعَزِيزُ اُ۬لْحَكِيمُۖ",
+     "standalone": false,
+     "words_in_verse_1": 12,
+     "ayahs_in_sura": 50
+    },
+    "الدوري": {
+     "verse_1": "حۭمٓ عٓسٓقٓۚ كَذَٰلِكَ يُوحِيٓ إِلَيۡكَ وَإِلَى اَ۬لَّذِينَ مِن قَبۡلِكَ اَ۬للَّهُ اُ۬لۡعَزِيزُ اُ۬لۡحَكِيمُ",
+     "standalone": false,
+     "words_in_verse_1": 12,
+     "ayahs_in_sura": 50
+    },
+    "السوسي": {
+     "verse_1": "حۭمٓ عٓسٓقٓۚ كَذَٰلِكَ يُوحِي إِلَيۡكَ وَإِلَى اَ۬لَّذِينَ مِن قَبۡلِكَ اَ۬للَّهُ اُ۬لۡعَزِيزُ اُ۬لۡحَكِيمُ",
+     "standalone": false,
+     "words_in_verse_1": 12,
+     "ayahs_in_sura": 50
+    },
+    "البزي": {
+     "verse_1": "حمٓ عٓسٓقٓۚ كَذَٰلِكَ يُوحَيٰ إِلَيۡكَ وَإِلَى ٱلَّذِينَ مِن قَبۡلِكَ ٱللَّهُ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
+     "standalone": false,
+     "words_in_verse_1": 12,
+     "ayahs_in_sura": 50
+    },
+    "قنبل": {
+     "verse_1": "حمٓۚ عٓسٓقٓۚ كَذَٰلِكَ يُوحَيٰ إِلَيۡكَ وَإِلَى ٱلَّذِينَ مِن قَبۡلِكَ ٱللَّهُ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
+     "standalone": false,
+     "words_in_verse_1": 12,
+     "ayahs_in_sura": 50
+    }
+   }
+  },
+  {
+   "id": "STAR-24",
+   "sura": 43,
+   "name": "الزخرف",
+   "opening": "حم",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "حمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 89
+    },
+    "شعبة": {
+     "verse_1": "حٜمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 89
+    },
+    "ورش": {
+     "verse_1": "ح۪مِٓۖ وَالْكِتَٰبِ اِ۬لْمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 89
+    },
+    "قالون": {
+     "verse_1": "حَمِٓۖ وَالْكِتَٰبِ اِ۬لْمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 89
+    },
+    "الدوري": {
+     "verse_1": "حۭمٓۚ وَاَلۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 89
+    },
+    "السوسي": {
+     "verse_1": "حۭمٓۚ وَاَلۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 89
+    },
+    "البزي": {
+     "verse_1": "حمٓۚ وَٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 89
+    },
+    "قنبل": {
+     "verse_1": "حمٓۚ وَٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 89
+    }
+   }
+  },
+  {
+   "id": "STAR-25",
+   "sura": 44,
+   "name": "الدخان",
+   "opening": "حم",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "حمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 59
+    },
+    "شعبة": {
+     "verse_1": "حٜمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 59
+    },
+    "ورش": {
+     "verse_1": "ح۪مِٓۖ وَالْكِتَٰبِ اِ۬لْمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 56
+    },
+    "قالون": {
+     "verse_1": "حَمِٓۖ وَالْكِتَٰبِ اِ۬لْمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 56
+    },
+    "الدوري": {
+     "verse_1": "حۭمٓۚ وَاَلۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 56
+    },
+    "السوسي": {
+     "verse_1": "حۭمٓۚ وَاَلۡكِتَٰبِ اِ۬لۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 56
+    },
+    "البزي": {
+     "verse_1": "حمٓۚ وَٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 56
+    },
+    "قنبل": {
+     "verse_1": "حمٓۚ وَٱلۡكِتَٰبِ ٱلۡمُبِينِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 56
+    }
+   }
+  },
+  {
+   "id": "STAR-26",
+   "sura": 45,
+   "name": "الجاثية",
+   "opening": "حم",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "حمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 37
+    },
+    "شعبة": {
+     "verse_1": "حٜمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 37
+    },
+    "ورش": {
+     "verse_1": "ح۪مِٓۖ تَنزِيلُ اُ۬لْكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لْعَزِيزِ اِ۬لْحَكِيمِۖ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 36
+    },
+    "قالون": {
+     "verse_1": "حَمِٓۖ تَنزِيلُ اُ۬لْكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لْعَزِيزِ اِ۬لْحَكِيمِۖ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 36
+    },
+    "الدوري": {
+     "verse_1": "حۭمٓۚ تَنزِيلُ اُ۬لۡكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لۡعَزِيزِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 36
+    },
+    "السوسي": {
+     "verse_1": "حۭمٓۚ تَنزِيلُ اُ۬لۡكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لۡعَزِيزِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 36
+    },
+    "البزي": {
+     "verse_1": "حمٓۚ تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 36
+    },
+    "قنبل": {
+     "verse_1": "حمٓۚ تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 36
+    }
+   }
+  },
+  {
+   "id": "STAR-27",
+   "sura": 46,
+   "name": "الأحقاف",
+   "opening": "حم",
+   "author_class": "غير محسوم",
+   "narrations": {
+    "حفص": {
+     "verse_1": "حمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 35
+    },
+    "شعبة": {
+     "verse_1": "حٜمٓ",
+     "standalone": true,
+     "words_in_verse_1": 1,
+     "ayahs_in_sura": 35
+    },
+    "ورش": {
+     "verse_1": "ح۪مِٓۖ تَنزِيلُ اُ۬لْكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لْعَزِيزِ اِ۬لْحَكِيمِۖ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 34
+    },
+    "قالون": {
+     "verse_1": "حَمِٓۖ تَنزِيلُ اُ۬لْكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لْعَزِيزِ اِ۬لْحَكِيمِۖ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 34
+    },
+    "الدوري": {
+     "verse_1": "حۭمٓۚ تَنزِيلُ اُ۬لۡكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لۡعَزِيزِ اِ۬لۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 34
+    },
+    "السوسي": {
+     "verse_1": "حۭمٓۚ تَنزِيلُ اُ۬لۡكِتَٰبِ مِنَ اَ۬للَّهِ اِ۬لۡعَزِيزِ اِ۬لۡحَكِيم",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 34
+    },
+    "البزي": {
+     "verse_1": "حمٓۚ تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 34
+    },
+    "قنبل": {
+     "verse_1": "حمٓۚ تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡحَكِيمِ",
+     "standalone": false,
+     "words_in_verse_1": 7,
+     "ayahs_in_sura": 34
+    }
+   }
+  },
+  {
+   "id": "STAR-28",
+   "sura": 50,
+   "name": "ق",
+   "opening": "ق",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "قٓۚ وَٱلۡقُرۡءَانِ ٱلۡمَجِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 45
+    },
+    "شعبة": {
+     "verse_1": "قٓۚ وَٱلۡقُرۡءَانِ ٱلۡمَجِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 45
+    },
+    "ورش": {
+     "verse_1": "قَٓۖ وَالْقُرْءَانِ اِ۬لْمَجِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 45
+    },
+    "قالون": {
+     "verse_1": "قَٓۖ وَالْقُرْءَانِ اِ۬لْمَجِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 45
+    },
+    "الدوري": {
+     "verse_1": "قٓۚ وَاَلۡقُرۡءَانِ اِ۬لۡمَجِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 45
+    },
+    "السوسي": {
+     "verse_1": "قٓۚ وَاَلۡقُرۡءَانِ اِ۬لۡمَجِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 45
+    },
+    "البزي": {
+     "verse_1": "قٓۚ وَٱلۡقُرَانِ ٱلۡمَجِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 45
+    },
+    "قنبل": {
+     "verse_1": "قٓۚ وَٱلۡقُرَانِ ٱلۡمَجِيدِ",
+     "standalone": false,
+     "words_in_verse_1": 3,
+     "ayahs_in_sura": 45
+    }
+   }
+  },
+  {
+   "id": "STAR-29",
+   "sura": 68,
+   "name": "القلم",
+   "opening": "ن",
+   "author_class": "طائرة",
+   "narrations": {
+    "حفص": {
+     "verse_1": "نٓۚ وَٱلۡقَلَمِ وَمَا يَسۡطُرُونَ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 52
+    },
+    "شعبة": {
+     "verse_1": "نٓۚ وَٱلۡقَلَمِ وَمَا يَسۡطُرُونَ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 52
+    },
+    "ورش": {
+     "verse_1": "نُّٓۖ وَالْقَلَمِ وَمَا يَسْطُرُونَ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 52
+    },
+    "قالون": {
+     "verse_1": "نُٓۖ وَالْقَلَمِ وَمَا يَسْطُرُونَ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 52
+    },
+    "الدوري": {
+     "verse_1": "نٓۚ وَاَلۡقَلَمِ وَمَا يَسۡطُرُونَ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 52
+    },
+    "السوسي": {
+     "verse_1": "نٓۚ وَاَلۡقَلَمِ وَمَا يَسۡطُرُونَ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 52
+    },
+    "البزي": {
+     "verse_1": "نٓۚ وَٱلۡقَلَمِ وَمَا يَسۡطُرُونَ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 52
+    },
+    "قنبل": {
+     "verse_1": "نٓۚ وَٱلۡقَلَمِ وَمَا يَسۡطُرُونَ",
+     "standalone": false,
+     "words_in_verse_1": 4,
+     "ayahs_in_sura": 52
+    }
+   }
+  }
+ ],
+ "finding": "كون الافتتاحية آية لحالها خاصية للعدّ الكوفي (حفص وشعبة: 19 موقع). بباقي الروايات المطبوعة هون ولا افتتاحية من التسعة والعشرين آية لحالها (0 بورش، 0 بالدوري، 0 بالبزي). وبعدّ الدوري/السوسي، الروم ٣٠:١ هي بالضبط «الٓمٓۚ غُلِبَتِ اِ۬لرُّومُ»: «الم غلبت الروم» آية وحدة. يعني قاعدة R1 بتطابق تصنيف المؤلف 17/١٩ بالعدّ الكوفي بس، وبتنهار لـ8/١٩ بالأعداد التانية: تصنيف «الطائرة/المغوصة» إذا كان مربوط بحدود الآية، فهو مربوط بالعدّ الكوفي.",
+ "status": "VERIFIED RECITATIONAL FACT"
+}

@@ -110,6 +110,43 @@ class TestPearlSkeleton(unittest.TestCase):
         self.assertEqual(len(r["readings"]["لُؤْلُؤ"]), 6)
 
 
+class TestQiraat(unittest.TestCase):
+    QIRAAT_SHA256 = {
+        "hafsData_v18.json": "5d8bb91726e482839d0057633cb1973031e4d706fa9604eea5e08892f20ba140",
+        "ShoubaData08.json": "f105da3949e0b8092e3abcd23a539c9bef4c9b7474f15d29848471f150ade667",
+        "warshData_v10.json": "f05d0dc652fd46b38563cacb13242f76f80db4cc64d25873da0bce157253872f",
+        "QaloonData_v10.json": "18465c40ebeec40a92eb98745c9b89796ac6e31f6e93988883dfb6602faaea95",
+        "DooriData_v09.json": "169b949d6cedd93ddb21728c16057d5ac7faf673ac10e0f213bb5dec1dc90d7d",
+        "SoosiData09.json": "81af638398efa88308803c06a961d7019daf2e87e822b8acae24df05a82aa81b",
+        "BazziData_v07.json": "2ff11a126e0f15f161b88f83528c0b11d24f69f474baabf02d8864cd93ed15ce",
+        "QumbulData_v07.json": "3a0377bd943def12711b15cc71a65214fb902a5df70240b87df13c7b516a7888",
+    }
+
+    def test_narration_files_unchanged(self):
+        for name, digest in self.QIRAAT_SHA256.items():
+            with open(os.path.join(ROOT, "data", "qiraat", name), "rb") as f:
+                self.assertEqual(hashlib.sha256(f.read()).hexdigest(), digest, name)
+
+    def test_rawm_mark_unique_in_yusuf(self):
+        r = experiments.exp09()
+        self.assertEqual([(v["sura"], v["ayah"]) for v in r["verses_with_mark"]], [(12, 11)])
+        self.assertEqual(r["sura_opening"], "الر")
+        self.assertTrue(r["rasm_is_morph_minus_one_nun"])
+        self.assertTrue(r["skeleton_alrum_eq_alrawm"])
+
+    def test_standalone_is_kufan(self):
+        r = experiments.exp10()
+        self.assertEqual(r["standalone_openings_per_narration"]["حفص"], 19)
+        self.assertEqual(r["standalone_openings_per_narration"]["ورش"], 0)
+        self.assertEqual(quran.rasm(r["rum_1_in_basri_count"]), "الم غلبت الروم")
+
+    def test_imala_only_on_hayy_tahir(self):
+        r = experiments.exp12()
+        self.assertTrue(r["all_inclined_letters_in_hayy_tahir"])
+        self.assertIn("\u0651", r["noon_68_1"]["ورش"])
+        self.assertNotIn("\u0651", r["noon_68_1"]["حفص"])
+
+
 class TestBrand(unittest.TestCase):
     def test_title_and_brand(self):
         b = json.load(open(os.path.join(ROOT, "data", "brand.json"), encoding="utf-8"))

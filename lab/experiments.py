@@ -11,6 +11,7 @@ import sys
 from collections import Counter, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import qiraat  # noqa: E402
 import quran  # noqa: E402
 import sites as sites_mod  # noqa: E402
 
@@ -326,7 +327,189 @@ def exp08():
     }
 
 
-EXPERIMENTS = [exp01, exp02, exp03, exp04, exp05, exp06, exp07, exp08]
+# ---------------------------------------------------------------------------
+# EXP-09  تأمنّا: علامة الإشمام/الرَّوْم الوحيدة بالمصحف، والنون اللي غاصت بالرسم
+# ---------------------------------------------------------------------------
+RAWM_MARK = "\u06EB"  # ARABIC EMPTY CENTRE HIGH STOP — علامة الإشمام/الروم بمصحف المدينة عند تنزيل
+
+
+def exp09():
+    q = quran.load()
+    sites = {s["sura"]: s for s in _sites()}
+    marked = [(s, a) for (s, a), v in sorted(q.uthmani.items()) if RAWM_MARK in v["text"]]
+    words = [(s, a, w) for s, a in marked for w in q.verse(s, a).split(" ") if RAWM_MARK in w]
+    s, a, w = words[0]
+    skel = quran.rasm(w)
+    morph = "تامننا"  # تَأْمَنُنَا: الفعل تأمنُ + نا — نونين بالبنية
+    return {
+        "id": "EXP-09",
+        "question": "وين بتظهر علامة الإشمام/الرَّوْم بالمصحف؟ وشو بيصير للنون بـ«تأمنّا»؟",
+        "mark": "U+06EB",
+        "verses_with_mark": [{"sura": s_, "ayah": a_, "name": q.name(s_), "text": q.verse(s_, a_)} for s_, a_ in marked],
+        "marked_words": [x[2] for x in words],
+        "sura_is_star_site": s in sites,
+        "sura_opening": sites[s]["opening"] if s in sites else None,
+        "sura_author_class": sites[s]["author_class"] if s in sites else None,
+        "rasm_skeleton": skel,
+        "morphological_skeleton": morph,
+        "rasm_is_morph_minus_one_nun": len(morph) == len(skel) + 1 and is_subseq(skel, morph) and damerau(skel, morph) == 1,
+        "skeleton_alrum_eq_alrawm": quran.rasm("ٱلرُّومُ") == quran.rasm("الرَّوْم"),
+        "duration_model": {"حركة كاملة": 1, "اختلاس (عند من يسمّيه)": "≈ ٢/٣", "الرَّوْم": "≈ ١/٣", "الإشمام": "٠ صوت (إشارة شفتين بتنشاف)", "السكون المحض": 0},
+        "finding": (f"العلامة U+06EB بتظهر بآية وحدة بس بالمصحف كله: {q.name(s)} {s}:{a}، على كلمة «{w}». "
+                    f"وسورة {q.name(s)} من مواقع النجوم (افتتاحيتها {sites[s]['opening']}، وتصنيفها عند المؤلف "
+                    f"«{sites[s]['author_class']}»). الرسم «{skel}» = البنية «{morph}» ناقص نون: نون غاصت بالكتابة، "
+                    "والرَّوْم بيرجّع أثرها بالصوت (ثلث الحركة)، والإشمام بيرجّعه إشارة بتنشاف وما بتنسمع. "
+                    "وهيكل «الروم» (السورة) هو نفسه هيكل «الرَّوْم» (المصطلح)."),
+        "status": "VERIFIED TEXT",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-10  حروف صُفْر عبر ثماني روايات: هل الافتتاحية آية لحالها؟ (العدّ بيختلف)
+# ---------------------------------------------------------------------------
+def exp10():
+    rows = []
+    for st in _sites():
+        s = st["sura"]
+        row = {"id": st["id"], "sura": s, "name": st["sura_name"], "opening": st["opening"],
+               "author_class": st["author_class"], "narrations": {}}
+        for n in qiraat.all_narrations():
+            first = n.verse(s, 1)
+            words = [w for w in first.split(" ") if quran.rasm(w)]
+            row["narrations"][n.meta["ar"]] = {
+                "verse_1": first,
+                "standalone": len(words) == 1,
+                "words_in_verse_1": len(words),
+                "ayahs_in_sura": n.ayah_count(s),
+            }
+        rows.append(row)
+    names = [n.meta["ar"] for n in qiraat.all_narrations()]
+    standalone_count = {nm: sum(r["narrations"][nm]["standalone"] for r in rows) for nm in names}
+    rum_basri = rows[[r["sura"] for r in rows].index(30)]["narrations"]["الدوري"]["verse_1"]
+    # R1 من EXP-01 (مغوص ⇔ مش آية مستقلة) تحت كل عدّ
+    r1 = {}
+    for nm in names:
+        ok = sum(1 for r in rows if r["author_class"] in ("مغوصة", "طائرة")
+                 and (("مغوصة" if not r["narrations"][nm]["standalone"] else "طائرة") == r["author_class"]))
+        r1[nm] = ok
+    return {
+        "id": "EXP-10",
+        "question": "هل «الافتتاحية آية مستقلة» خاصية للنص ولا للعدّ؟ وكيف بتظهر حروف صُفْر بكل رواية؟",
+        "narration_totals": {n.meta["ar"]: n.ayah_count() for n in qiraat.all_narrations()},
+        "standalone_openings_per_narration": standalone_count,
+        "rule_R1_agreement_per_count": r1,
+        "rum_1_in_basri_count": rum_basri,
+        "data": rows,
+        "finding": ("كون الافتتاحية آية لحالها خاصية للعدّ الكوفي (حفص وشعبة: "
+                    f"{standalone_count['حفص']} موقع). بباقي الروايات المطبوعة هون ولا افتتاحية من التسعة والعشرين آية "
+                    f"لحالها ({standalone_count['ورش']} بورش، {standalone_count['الدوري']} بالدوري، {standalone_count['البزي']} بالبزي). "
+                    f"وبعدّ الدوري/السوسي، الروم ٣٠:١ هي بالضبط «{rum_basri}»: «الم غلبت الروم» آية وحدة. "
+                    f"يعني قاعدة R1 بتطابق تصنيف المؤلف {r1['حفص']}/١٩ بالعدّ الكوفي بس، وبتنهار لـ{r1['ورش']}/١٩ "
+                    "بالأعداد التانية: تصنيف «الطائرة/المغوصة» إذا كان مربوط بحدود الآية، فهو مربوط بالعدّ الكوفي."),
+        "status": "VERIFIED RECITATIONAL FACT",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-11  الفرش على مستوى الرسم: وين بتختلف الروايات بالهيكل نفسه؟
+# ---------------------------------------------------------------------------
+def exp11():
+    import difflib
+    base = qiraat.load("hafs")
+    out = {}
+    watch = {(22, 23), (35, 33), (77, 33), (12, 11), (30, 2), (30, 4), (13, 31), (13, 1)}
+    for n in qiraat.all_narrations():
+        if n.key == "hafs":
+            continue
+        skel_diff, marks_only, examples, watched = 0, 0, [], []
+        for s in range(1, 115):
+            A = base.sura_words(s)
+            B = n.sura_words(s)
+            ka = [qiraat.skeleton(w) for _, w in A]
+            kb = [qiraat.skeleton(w) for _, w in B]
+            sm = difflib.SequenceMatcher(a=ka, b=kb, autojunk=False)
+            for tag, i1, i2, j1, j2 in sm.get_opcodes():
+                if tag == "equal":
+                    for i, j in zip(range(i1, i2), range(j1, j2)):
+                        if quran.strip_marks(qiraat.clean(A[i][1])) != quran.strip_marks(qiraat.clean(B[j][1])) or A[i][1] != B[j][1]:
+                            marks_only += 1
+                            if (s, A[i][0]) in watch:
+                                watched.append({"ref": f"{s}:{A[i][0]}", "hafs": A[i][1], n.meta["ar"]: B[j][1], "kind": "ضبط/أداء"})
+                else:
+                    skel_diff += 1
+                    if len(examples) < 12:
+                        examples.append({"sura": s, "ayah_hafs": A[i1][0] if i1 < len(A) else None,
+                                         "hafs": " ".join(w for _, w in A[i1:i2]), n.meta["ar"]: " ".join(w for _, w in B[j1:j2])})
+                    if i1 < len(A) and (s, A[i1][0]) in watch:
+                        watched.append({"ref": f"{s}:{A[i1][0]}", "hafs": " ".join(w for _, w in A[i1:i2]),
+                                        n.meta["ar"]: " ".join(w for _, w in B[j1:j2]), "kind": "رسم"})
+        out[n.meta["ar"]] = {"skeleton_diff_spans": skel_diff, "words_same_skeleton_diff_marks": marks_only,
+                             "examples": examples, "watched_verses": watched}
+    return {
+        "id": "EXP-11",
+        "question": "قدّيش من خلاف الروايات بيمسّ الهيكل (الرسم)، وقدّيش بيضل فوق الهيكل (ضبط وأداء)؟",
+        "baseline": "حفص",
+        "per_narration": out,
+        "finding": ("الأغلبية الساحقة من الخلاف بين الروايات بتصير فوق نفس الهيكل: نفس الرسم، ضبط وأداء مختلف. "
+                    "الخلاف اللي بيغيّر الهيكل نفسه قليل نسبيًا. هاد هو ركن «موافقة الرسم ولو احتمالًا»: "
+                    "الرسم لوح مشترك، والقراءات حالات عليه — نفس فكرة «لغة اللؤلؤ» (P-025)."),
+        "status": "OBSERVED STRUCTURE",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-12  حروف صُفْر بالأداء: الإمالة/التقليل والإدغام عبر الروايات
+# ---------------------------------------------------------------------------
+IMALA_MARKS = {"\u06EA": "إمالة/تقليل (نقطة خالية تحت)", "\u065C": "إمالة (نقطة تحت)", "\u06ED": "إمالة (ميم صغيرة تحت)"}
+HAYY_TAHIR = set("حيطهر")   # أسماؤها على حرفين آخرها ألف: حا يا طا ها را
+NAQS_ASALKAM = set("نقصعسلكم")  # أسماؤها ثلاثة أحرف: مدّ لازم
+
+
+def exp12():
+    rows, seen = [], set()
+    for st in _sites():
+        for u in st["units"]:
+            key = u["letters"]
+            if key in seen:
+                continue
+            seen.add(key)
+            per = {}
+            for n in qiraat.all_narrations():
+                words = [w for w in n.verse(st["sura"], u["ayah"] if n.key in ("hafs", "shouba") else 1).split(" ")
+                         if qiraat.skeleton(w) == key]
+                w = words[0] if words else n.verse(st["sura"], 1).split(" ")[0]
+                inclined = []
+                for i, c in enumerate(w):
+                    if c in IMALA_MARKS:
+                        j = i - 1
+                        while j >= 0 and not ("\u0621" <= w[j] <= "\u064A" or w[j] == "\u0671"):
+                            j -= 1
+                        inclined.append(w[j] if j >= 0 else "?")
+                per[n.meta["ar"]] = {"written": w, "inclined_letters": inclined,
+                                     "shadda_on_last": w.rstrip("\u06D6\u06D7\u06DA\u06D8\u0653").endswith("\u0651")
+                                     or "\u0651\u0653" in w[-4:] or "\u0651" in w[-3:]}
+            all_inclined = {c for v in per.values() for c in v["inclined_letters"]}
+            rows.append({"letters": key, "author_class": st["author_class"], "per_narration": per,
+                         "inclined_anywhere": sorted(all_inclined),
+                         "inclined_subset_of_hayy_tahir": all_inclined <= HAYY_TAHIR})
+    noon = rows[[r["letters"] for r in rows].index("ن")]["per_narration"]
+    return {
+        "id": "EXP-12",
+        "question": "حروف صُفْر نفسها: شو بيتغيّر بأدائها من رواية لرواية؟",
+        "groups": {"حي طهر": "أسماؤها حرفين آخرها ألف (مدّ طبيعي)، وهي اللي بتقبل الإمالة/التقليل",
+                   "نقص عسلكم": "أسماؤها ثلاث أحرف (مدّ لازم)", "ا": "ألف: ما فيها مدّ"},
+        "data": rows,
+        "all_inclined_letters_in_hayy_tahir": all(r["inclined_subset_of_hayy_tahir"] for r in rows),
+        "noon_68_1": {k: v["written"] for k, v in noon.items()},
+        "finding": ("كل حرف من حروف صُفْر انمال أو تقلّل بأي رواية من الثمانية هو من مجموعة «حي طهر» "
+                    "(أسماء على حرفين آخرها ألف). الراء في الر والمر بتنمال/بتتقلّل عند شعبة وورش والدوري والسوسي، "
+                    "وبتضل مفتوحة عند حفص وقالون والبزي وقنبل. وورش بيكتب «نُّٓ» بالقلم ٦٨:١ بشدّة: النون بتدغم "
+                    "بواو «والقلم»، وحفص بيظهرها. يعني بالأداء، ن بتغوص عند ورش."),
+        "status": "VERIFIED RECITATIONAL FACT",
+    }
+
+
+EXPERIMENTS = [exp01, exp02, exp03, exp04, exp05, exp06, exp07, exp08, exp09, exp10, exp11, exp12]
 
 
 def run_all():
