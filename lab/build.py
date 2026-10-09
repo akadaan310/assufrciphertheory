@@ -98,7 +98,17 @@ def markdown(q, src, pearl_ids):
     while i < len(lines):
         line = lines[i].rstrip()
         m = _Q_BLOCK.match(line.strip())
-        if m:
+        if line.strip() == "{{sites}}":
+            flush()
+            sites = json.load(open(os.path.join(quran.ROOT, "data", "sites.json"), encoding="utf-8"))["sites"]
+            rows = ["<tr><th>النجمة</th><th>السورة</th><th>الافتتاحية كما هي</th><th>حدّها</th><th>تصنيف المؤلف</th></tr>"]
+            for st in sites:
+                written = " ۝ ".join(html.escape(u["opening_as_written"]) for u in st["units"])
+                where = " + ".join(("آية مستقلة" if u["standalone_ayah"] else "داخل آية") + f" ({u['ayah']})".translate(AR) for u in st["units"])
+                rows.append(f"<tr><td>{st['id']}</td><td>{html.escape(st['sura_name'])} {str(st['sura']).translate(AR)}</td>"
+                            f"<td class=\"q\">{written}</td><td>{where}</td><td>{html.escape(st['author_class'])}</td></tr>")
+            out.append("<table>" + "".join(rows) + "</table>")
+        elif m:
             flush()
             s, a = int(m.group(1)), int(m.group(2))
             b = int(m.group(3)) if m.group(3) else a

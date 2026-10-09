@@ -88,7 +88,7 @@
     const r = opts.r || 5 + s.units[0].letters.length * 1.6;
     const grp = el("g", { class: "star", transform: `translate(${x},${y})`, tabindex: 0, role: "button", "aria-label": `${s.sura_name} ${s.opening}` }, g);
     const cls = s.author_class;
-    if (cls === "طائرة") el("circle", { r: r * 2.2, fill: css("--gold"), opacity: .12 }, grp);
+    if (cls === "طائرة") el("circle", { r: r * 2.2, fill: css("--gold"), opacity: .12, "pointer-events": "none" }, grp);
     el("circle", {
       r, fill: cls === "غير محسوم" ? "none" : cls === "مغوصة" ? css("--sand") : css("--pearl"),
       stroke: css("--gold"), "stroke-width": cls === "غير محسوم" ? 1.6 : 1, "stroke-dasharray": cls === "غير محسوم" ? "3 2" : "",
@@ -132,7 +132,7 @@
   const MAPS = [
     {
       id: "sites", name: "١ · خريطة المواقع",
-      caption: "كل نقطة موقع من التسعة والعشرين، مرتّبة حول الدائرة حسب رقم السورة (١١٤ علامة). الوصلات من سجلّ اللآلئ بس.",
+      caption: "كل نجمة موقع من التسعة والعشرين بترتيب المصحف؛ الخيط الرفيع بيوصلها بمكان سورتها على الحلقة (١١٤ علامة). الوصلات من سجلّ اللآلئ بس.",
       legend: ["stars", "solid", "dash", "bad"],
       draw(g) {
         const C = [500, 360], R = 280, pos = {};
@@ -142,10 +142,13 @@
           el("line", { x1: C[0] + inner * Math.cos(t), y1: C[1] + inner * Math.sin(t), x2: C[0] + R * Math.cos(t), y2: C[1] + R * Math.sin(t), stroke: css("--line") }, g);
         }
         el("circle", { cx: C[0], cy: C[1], r: R, fill: "none", stroke: css("--line") }, g);
-        D.sites.forEach(s => {
-          const t = -Math.PI / 2 + (s.sura - 1) / 114 * 2 * Math.PI;
-          const r = R - 70;
+        // النجوم متباعدة بالتساوي عشان ما تتراكب؛ خيط رفيع بيوصل كل نجمة بموقعها الحقيقي على مقياس الـ١١٤.
+        D.sites.forEach((s, i) => {
+          const t = -Math.PI / 2 + i / D.sites.length * 2 * Math.PI;
+          const ts = -Math.PI / 2 + (s.sura - 1) / 114 * 2 * Math.PI;
+          const r = R - 75;
           pos[s.id] = [C[0] + r * Math.cos(t), C[1] + r * Math.sin(t)];
+          el("line", { x1: pos[s.id][0], y1: pos[s.id][1], x2: C[0] + (R - 14) * Math.cos(ts), y2: C[1] + (R - 14) * Math.sin(ts), stroke: css("--gold-soft"), opacity: .35 }, g);
         });
         const eg = el("g", {}, g);
         D.edges.forEach(e => link(eg, pos[e.from], pos[e.to], edgeKind(e.statuses), e.pearls, .25));
