@@ -1,0 +1,321 @@
+{
+ "source": "قائمة المؤلف في البرومبت الأمّ؛ التصنيف (مغوصة/طائرة) أولي ومقترح من المؤلف، وغير المصنّف ضلّ غير محسوم.",
+ "sites": [
+  {
+   "sura": 2,
+   "sura_name": "البقرة",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 3,
+   "sura_name": "آل عمران",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 7,
+   "sura_name": "الأعراف",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "المص"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 10,
+   "sura_name": "يونس",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر"
+    }
+   ],
+   "author_class": "مغوصة"
+  },
+  {
+   "sura": 11,
+   "sura_name": "هود",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر"
+    }
+   ],
+   "author_class": "مغوصة"
+  },
+  {
+   "sura": 12,
+   "sura_name": "يوسف",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر"
+    }
+   ],
+   "author_class": "مغوصة"
+  },
+  {
+   "sura": 13,
+   "sura_name": "الرعد",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "المر"
+    }
+   ],
+   "author_class": "مغوصة",
+   "notes": "ضمن قراءة المؤلف: الميم هون هي اللي «غاصت» (المر). مش الم في الروم."
+  },
+  {
+   "sura": 14,
+   "sura_name": "إبراهيم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر"
+    }
+   ],
+   "author_class": "مغوصة"
+  },
+  {
+   "sura": 15,
+   "sura_name": "الحجر",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر"
+    }
+   ],
+   "author_class": "مغوصة"
+  },
+  {
+   "sura": 19,
+   "sura_name": "مريم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "كهيعص"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 20,
+   "sura_name": "طه",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "طه"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 26,
+   "sura_name": "الشعراء",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "طسم"
+    }
+   ]
+  },
+  {
+   "sura": 27,
+   "sura_name": "النمل",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "طس"
+    }
+   ],
+   "author_class": "مغوصة"
+  },
+  {
+   "sura": 28,
+   "sura_name": "القصص",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "طسم"
+    }
+   ]
+  },
+  {
+   "sura": 29,
+   "sura_name": "العنكبوت",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 30,
+   "sura_name": "الروم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم"
+    }
+   ],
+   "author_class": "طائرة",
+   "notes": "الم في الروم مش هي حالة غوص الميم؛ الغوص المقترح للميم هو في المر (الرعد ١٣)."
+  },
+  {
+   "sura": 31,
+   "sura_name": "لقمان",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 32,
+   "sura_name": "السجدة",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 36,
+   "sura_name": "يس",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "يس"
+    }
+   ]
+  },
+  {
+   "sura": 38,
+   "sura_name": "ص",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "ص"
+    }
+   ],
+   "author_class": "مغوصة"
+  },
+  {
+   "sura": 40,
+   "sura_name": "غافر",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم"
+    }
+   ]
+  },
+  {
+   "sura": 41,
+   "sura_name": "فصلت",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم"
+    }
+   ]
+  },
+  {
+   "sura": 42,
+   "sura_name": "الشورى",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم"
+    },
+    {
+     "ayah": 2,
+     "letters": "عسق"
+    }
+   ],
+   "notes": "حم (٤٢:١) وعسق (٤٢:٢) آيتان منفصلتان؛ ما بندمجهم."
+  },
+  {
+   "sura": 43,
+   "sura_name": "الزخرف",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم"
+    }
+   ]
+  },
+  {
+   "sura": 44,
+   "sura_name": "الدخان",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم"
+    }
+   ]
+  },
+  {
+   "sura": 45,
+   "sura_name": "الجاثية",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم"
+    }
+   ]
+  },
+  {
+   "sura": 46,
+   "sura_name": "الأحقاف",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم"
+    }
+   ]
+  },
+  {
+   "sura": 50,
+   "sura_name": "ق",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "ق"
+    }
+   ],
+   "author_class": "طائرة"
+  },
+  {
+   "sura": 68,
+   "sura_name": "القلم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "ن"
+    }
+   ],
+   "author_class": "طائرة"
+  }
+ ]
+}

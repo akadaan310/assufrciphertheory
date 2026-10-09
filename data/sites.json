@@ -1,0 +1,790 @@
+{
+ "description": "المواقع التسعة والعشرون (مواقع النجوم) متحقَّق منها حرفيًا من نص تنزيل العثماني، العدّ الكوفي (رواية حفص).",
+ "text_source": "Tanzil Quran Text (Uthmani, Version 1.1), tanzil.net — CC BY 3.0, verbatim",
+ "status": "VERIFIED TEXT",
+ "sites": [
+  {
+   "site": 1,
+   "id": "STAR-01",
+   "sura": 2,
+   "sura_name": "البقرة",
+   "sura_ayahs": 286,
+   "opening": "الم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم",
+     "uthmani_ayah_text": "الٓمٓ",
+     "opening_as_written": "الٓمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "ذلك"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ل",
+    "م"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 2,
+   "id": "STAR-02",
+   "sura": 3,
+   "sura_name": "آل عمران",
+   "sura_ayahs": 200,
+   "opening": "الم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم",
+     "uthmani_ayah_text": "الٓمٓ",
+     "opening_as_written": "الٓمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "الله"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ل",
+    "م"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 3,
+   "id": "STAR-03",
+   "sura": 7,
+   "sura_name": "الأعراف",
+   "sura_ayahs": 206,
+   "opening": "المص",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "المص",
+     "uthmani_ayah_text": "الٓمٓصٓ",
+     "opening_as_written": "الٓمٓصٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "كتاب"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ص",
+    "ل",
+    "م"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 4,
+   "id": "STAR-04",
+   "sura": 10,
+   "sura_name": "يونس",
+   "sura_ayahs": 109,
+   "opening": "الر",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر",
+     "uthmani_ayah_text": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْحَكِيمِ",
+     "opening_as_written": "الٓر",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 4,
+     "next_word": "تلك"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ر",
+    "ل"
+   ],
+   "author_class": "مغوصة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 5,
+   "id": "STAR-05",
+   "sura": 11,
+   "sura_name": "هود",
+   "sura_ayahs": 123,
+   "opening": "الر",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر",
+     "uthmani_ayah_text": "الٓر ۚ كِتَـٰبٌ أُحْكِمَتْ ءَايَـٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ",
+     "opening_as_written": "الٓر",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 9,
+     "next_word": "كتاب"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ر",
+    "ل"
+   ],
+   "author_class": "مغوصة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 6,
+   "id": "STAR-06",
+   "sura": 12,
+   "sura_name": "يوسف",
+   "sura_ayahs": 111,
+   "opening": "الر",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر",
+     "uthmani_ayah_text": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+     "opening_as_written": "الٓر",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 4,
+     "next_word": "تلك"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ر",
+    "ل"
+   ],
+   "author_class": "مغوصة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 7,
+   "id": "STAR-07",
+   "sura": 13,
+   "sura_name": "الرعد",
+   "sura_ayahs": 43,
+   "opening": "المر",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "المر",
+     "uthmani_ayah_text": "الٓمٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ۗ وَٱلَّذِىٓ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ٱلْحَقُّ وَلَـٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يُؤْمِنُونَ",
+     "opening_as_written": "الٓمٓر",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 14,
+     "next_word": "تلك"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ر",
+    "ل",
+    "م"
+   ],
+   "author_class": "مغوصة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": "ضمن قراءة المؤلف: الميم هون هي اللي «غاصت» (المر). مش الم في الروم."
+  },
+  {
+   "site": 8,
+   "id": "STAR-08",
+   "sura": 14,
+   "sura_name": "إبراهيم",
+   "sura_ayahs": 52,
+   "opening": "الر",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر",
+     "uthmani_ayah_text": "الٓر ۚ كِتَـٰبٌ أَنزَلْنَـٰهُ إِلَيْكَ لِتُخْرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَٰطِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+     "opening_as_written": "الٓر",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 15,
+     "next_word": "كتاب"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ر",
+    "ل"
+   ],
+   "author_class": "مغوصة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 9,
+   "id": "STAR-09",
+   "sura": 15,
+   "sura_name": "الحجر",
+   "sura_ayahs": 99,
+   "opening": "الر",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الر",
+     "uthmani_ayah_text": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ وَقُرْءَانٍ مُّبِينٍ",
+     "opening_as_written": "الٓر",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 5,
+     "next_word": "تلك"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ر",
+    "ل"
+   ],
+   "author_class": "مغوصة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 10,
+   "id": "STAR-10",
+   "sura": 19,
+   "sura_name": "مريم",
+   "sura_ayahs": 98,
+   "opening": "كهيعص",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "كهيعص",
+     "uthmani_ayah_text": "كٓهيعٓصٓ",
+     "opening_as_written": "كٓهيعٓصٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "ذكر"
+    }
+   ],
+   "letters_multiset": [
+    "ص",
+    "ع",
+    "ك",
+    "ه",
+    "ي"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 11,
+   "id": "STAR-11",
+   "sura": 20,
+   "sura_name": "طه",
+   "sura_ayahs": 135,
+   "opening": "طه",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "طه",
+     "uthmani_ayah_text": "طه",
+     "opening_as_written": "طه",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "ما"
+    }
+   ],
+   "letters_multiset": [
+    "ط",
+    "ه"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 12,
+   "id": "STAR-12",
+   "sura": 26,
+   "sura_name": "الشعراء",
+   "sura_ayahs": 227,
+   "opening": "طسم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "طسم",
+     "uthmani_ayah_text": "طسٓمٓ",
+     "opening_as_written": "طسٓمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "تلك"
+    }
+   ],
+   "letters_multiset": [
+    "س",
+    "ط",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 13,
+   "id": "STAR-13",
+   "sura": 27,
+   "sura_name": "النمل",
+   "sura_ayahs": 93,
+   "opening": "طس",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "طس",
+     "uthmani_ayah_text": "طسٓ ۚ تِلْكَ ءَايَـٰتُ ٱلْقُرْءَانِ وَكِتَابٍ مُّبِينٍ",
+     "opening_as_written": "طسٓ",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 5,
+     "next_word": "تلك"
+    }
+   ],
+   "letters_multiset": [
+    "س",
+    "ط"
+   ],
+   "author_class": "مغوصة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 14,
+   "id": "STAR-14",
+   "sura": 28,
+   "sura_name": "القصص",
+   "sura_ayahs": 88,
+   "opening": "طسم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "طسم",
+     "uthmani_ayah_text": "طسٓمٓ",
+     "opening_as_written": "طسٓمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "تلك"
+    }
+   ],
+   "letters_multiset": [
+    "س",
+    "ط",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 15,
+   "id": "STAR-15",
+   "sura": 29,
+   "sura_name": "العنكبوت",
+   "sura_ayahs": 69,
+   "opening": "الم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم",
+     "uthmani_ayah_text": "الٓمٓ",
+     "opening_as_written": "الٓمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "احسب"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ل",
+    "م"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 16,
+   "id": "STAR-16",
+   "sura": 30,
+   "sura_name": "الروم",
+   "sura_ayahs": 60,
+   "opening": "الم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم",
+     "uthmani_ayah_text": "الٓمٓ",
+     "opening_as_written": "الٓمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "غلبت"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ل",
+    "م"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": "الم في الروم مش هي حالة غوص الميم؛ الغوص المقترح للميم هو في المر (الرعد ١٣)."
+  },
+  {
+   "site": 17,
+   "id": "STAR-17",
+   "sura": 31,
+   "sura_name": "لقمان",
+   "sura_ayahs": 34,
+   "opening": "الم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم",
+     "uthmani_ayah_text": "الٓمٓ",
+     "opening_as_written": "الٓمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "تلك"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ل",
+    "م"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 18,
+   "id": "STAR-18",
+   "sura": 32,
+   "sura_name": "السجدة",
+   "sura_ayahs": 30,
+   "opening": "الم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "الم",
+     "uthmani_ayah_text": "الٓمٓ",
+     "opening_as_written": "الٓمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "تنزيل"
+    }
+   ],
+   "letters_multiset": [
+    "ا",
+    "ل",
+    "م"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 19,
+   "id": "STAR-19",
+   "sura": 36,
+   "sura_name": "يس",
+   "sura_ayahs": 83,
+   "opening": "يس",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "يس",
+     "uthmani_ayah_text": "يسٓ",
+     "opening_as_written": "يسٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "والقران"
+    }
+   ],
+   "letters_multiset": [
+    "س",
+    "ي"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 20,
+   "id": "STAR-20",
+   "sura": 38,
+   "sura_name": "ص",
+   "sura_ayahs": 88,
+   "opening": "ص",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "ص",
+     "uthmani_ayah_text": "صٓ ۚ وَٱلْقُرْءَانِ ذِى ٱلذِّكْرِ",
+     "opening_as_written": "صٓ",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 3,
+     "next_word": "والقران"
+    }
+   ],
+   "letters_multiset": [
+    "ص"
+   ],
+   "author_class": "مغوصة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 21,
+   "id": "STAR-21",
+   "sura": 40,
+   "sura_name": "غافر",
+   "sura_ayahs": 85,
+   "opening": "حم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم",
+     "uthmani_ayah_text": "حمٓ",
+     "opening_as_written": "حمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "تنزيل"
+    }
+   ],
+   "letters_multiset": [
+    "ح",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 22,
+   "id": "STAR-22",
+   "sura": 41,
+   "sura_name": "فصلت",
+   "sura_ayahs": 54,
+   "opening": "حم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم",
+     "uthmani_ayah_text": "حمٓ",
+     "opening_as_written": "حمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "تنزيل"
+    }
+   ],
+   "letters_multiset": [
+    "ح",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 23,
+   "id": "STAR-23",
+   "sura": 42,
+   "sura_name": "الشورى",
+   "sura_ayahs": 53,
+   "opening": "حم عسق",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم",
+     "uthmani_ayah_text": "حمٓ",
+     "opening_as_written": "حمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "عسق"
+    },
+    {
+     "ayah": 2,
+     "letters": "عسق",
+     "uthmani_ayah_text": "عٓسٓقٓ",
+     "opening_as_written": "عٓسٓقٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "كذلك"
+    }
+   ],
+   "letters_multiset": [
+    "ح",
+    "س",
+    "ع",
+    "ق",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": "حم (٤٢:١) وعسق (٤٢:٢) آيتان منفصلتان؛ ما بندمجهم."
+  },
+  {
+   "site": 24,
+   "id": "STAR-24",
+   "sura": 43,
+   "sura_name": "الزخرف",
+   "sura_ayahs": 89,
+   "opening": "حم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم",
+     "uthmani_ayah_text": "حمٓ",
+     "opening_as_written": "حمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "والكتاب"
+    }
+   ],
+   "letters_multiset": [
+    "ح",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 25,
+   "id": "STAR-25",
+   "sura": 44,
+   "sura_name": "الدخان",
+   "sura_ayahs": 59,
+   "opening": "حم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم",
+     "uthmani_ayah_text": "حمٓ",
+     "opening_as_written": "حمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "والكتاب"
+    }
+   ],
+   "letters_multiset": [
+    "ح",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 26,
+   "id": "STAR-26",
+   "sura": 45,
+   "sura_name": "الجاثية",
+   "sura_ayahs": 37,
+   "opening": "حم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم",
+     "uthmani_ayah_text": "حمٓ",
+     "opening_as_written": "حمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "تنزيل"
+    }
+   ],
+   "letters_multiset": [
+    "ح",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 27,
+   "id": "STAR-27",
+   "sura": 46,
+   "sura_name": "الأحقاف",
+   "sura_ayahs": 35,
+   "opening": "حم",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "حم",
+     "uthmani_ayah_text": "حمٓ",
+     "opening_as_written": "حمٓ",
+     "standalone_ayah": true,
+     "words_after_in_same_ayah": 0,
+     "next_word": "تنزيل"
+    }
+   ],
+   "letters_multiset": [
+    "ح",
+    "م"
+   ],
+   "author_class": "غير محسوم",
+   "author_class_status": "OPEN QUESTION",
+   "notes": ""
+  },
+  {
+   "site": 28,
+   "id": "STAR-28",
+   "sura": 50,
+   "sura_name": "ق",
+   "sura_ayahs": 45,
+   "opening": "ق",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "ق",
+     "uthmani_ayah_text": "قٓ ۚ وَٱلْقُرْءَانِ ٱلْمَجِيدِ",
+     "opening_as_written": "قٓ",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 2,
+     "next_word": "والقران"
+    }
+   ],
+   "letters_multiset": [
+    "ق"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  },
+  {
+   "site": 29,
+   "id": "STAR-29",
+   "sura": 68,
+   "sura_name": "القلم",
+   "sura_ayahs": 52,
+   "opening": "ن",
+   "units": [
+    {
+     "ayah": 1,
+     "letters": "ن",
+     "uthmani_ayah_text": "نٓ ۚ وَٱلْقَلَمِ وَمَا يَسْطُرُونَ",
+     "opening_as_written": "نٓ",
+     "standalone_ayah": false,
+     "words_after_in_same_ayah": 3,
+     "next_word": "والقلم"
+    }
+   ],
+   "letters_multiset": [
+    "ن"
+   ],
+   "author_class": "طائرة",
+   "author_class_status": "AUTHOR'S READING",
+   "notes": ""
+  }
+ ]
+}

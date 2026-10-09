@@ -1,0 +1,346 @@
+# -*- coding: utf-8 -*-
+"""تجارب لؤلؤ العربية (لغة اللؤلؤ واللؤلؤة). كل تجربة حتمية (deterministic) وبتكتب نتيجتها في results/EXP-XX.json.
+
+تشغيل:  python3 lab/experiments.py
+كل تجربة بتحمل: السؤال، القاعدة، الناتج المتوقع، الناتج الفعلي، والأمثلة المضادة.
+"""
+import itertools
+import json
+import os
+import sys
+from collections import Counter, defaultdict
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import quran  # noqa: E402
+import sites as sites_mod  # noqa: E402
+
+RESULTS = os.path.join(quran.ROOT, "results")
+MADDA = "ٓ"  # علامة المدّ اللازم فوق حروف الافتتاح في الرسم العثماني عند تنزيل
+
+
+def _sites():
+    return json.load(open(sites_mod.OUTPUT, encoding="utf-8"))["sites"]
+
+
+def _site_suras():
+    return sorted({s["sura"] for s in _sites()})
+
+
+def _share(q, suras, unit="ayah"):
+    """حصّة مجموعة سور من النص كله (بالآيات)."""
+    total = len(q.keys())
+    part = sum(q.ayah_count(s) for s in suras)
+    return part / total
+
+
+# ---------------------------------------------------------------------------
+# EXP-01  الطائرة والمغوصة: هل في قاعدة نصّية واحدة بتعيد إنتاج تصنيف المؤلف؟
+# ---------------------------------------------------------------------------
+def exp01():
+    rows = []
+    for s in _sites():
+        u = s["units"][0]
+        word = u["opening_as_written"]
+        rows.append({
+            "id": s["id"], "sura": s["sura"], "name": s["sura_name"], "letters": u["letters"],
+            "class": s["author_class"],
+            "standalone_ayah": u["standalone_ayah"],
+            "single_letter": len(u["letters"]) == 1,
+            "has_ra": "ر" in u["letters"],
+            "last_letter_has_madd_sign": word.endswith(MADDA),
+            "next_is_waw_oath": u["next_word"].startswith("و") and not u["standalone_ayah"],
+        })
+    classified = [r for r in rows if r["class"] in ("مغوصة", "طائرة")]
+
+    rules = {
+        "R1": ("مغوصة ⇔ الافتتاحية مش آية مستقلة (بتشارك آيتها كلام بعدها)",
+               lambda r: not r["standalone_ayah"]),
+        "R2": ("مغوصة ⇔ الافتتاحية فيها راء", lambda r: r["has_ra"]),
+        "R3": ("مغوصة ⇔ آخر حرف مش عليه علامة مدّ في الرسم", lambda r: not r["last_letter_has_madd_sign"]),
+        "R4": ("مغوصة ⇔ مش آية مستقلة، والكلمة اللي بعدها مش واو قسم",
+               lambda r: (not r["standalone_ayah"]) and not r["next_is_waw_oath"]),
+    }
+    report = {}
+    for key, (desc, pred) in rules.items():
+        agree, counter = 0, []
+        for r in classified:
+            predicted = "مغوصة" if pred(r) else "طائرة"
+            if predicted == r["class"]:
+                agree += 1
+            else:
+                counter.append(f"{r['name']} ({r['letters']}): القاعدة بتقول {predicted}، والمؤلف بيقول {r['class']}")
+        predictions = {f"{r['name']} ({r['letters']})": ("مغوصة" if pred(r) else "طائرة")
+                       for r in rows if r["class"] == "غير محسوم"}
+        report[key] = {"rule": desc, "agree": agree, "of": len(classified),
+                       "counterexamples": counter, "predictions_for_unclassified": predictions}
+    return {
+        "id": "EXP-01",
+        "question": "هل في خاصية نصية بسيطة بتفصل الحروف المغوصة عن الطائرة حسب تصنيف المؤلف الأولي؟",
+        "data": rows,
+        "rules": report,
+        "finding": ("R1 بتطابق كل الحالات المغوصة (كلها جوّا آية أطول)، بس بتغلط في ق ون: هدول جوّا آية "
+                    "والمؤلف بيعدّهم طائرة. ولا قاعدة من الأربع بتطابق التصنيف كاملًا."),
+        "status": "COUNTEREXAMPLE FOUND",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-02  هندسة ا ل م ر: الم، الر، المر، والكلمات القريبة
+# ---------------------------------------------------------------------------
+def is_subseq(a, b):
+    it = iter(b)
+    return all(c in it for c in a)
+
+
+def damerau(a, b):
+    d = {(i, -1): i + 1 for i in range(-1, len(a))}
+    d.update({(-1, j): j + 1 for j in range(-1, len(b))})
+    for i in range(len(a)):
+        for j in range(len(b)):
+            cost = 0 if a[i] == b[j] else 1
+            d[(i, j)] = min(d[(i - 1, j)] + 1, d[(i, j - 1)] + 1, d[(i - 1, j - 1)] + cost)
+            if i and j and a[i] == b[j - 1] and a[i - 1] == b[j]:
+                d[(i, j)] = min(d[(i, j)], d[(i - 2, j - 2)] + 1)
+    return d[(len(a) - 1, len(b) - 1)]
+
+
+def shortest_common_supersequences(a, b):
+    letters = sorted(set(a + b))
+    for n in range(max(len(a), len(b)), len(a) + len(b) + 1):
+        found = sorted("".join(p) for p in itertools.product(letters, repeat=n)
+                       if is_subseq(a, "".join(p)) and is_subseq(b, "".join(p)))
+        if found:
+            return found
+    return []
+
+
+def exp02():
+    q = quran.load()
+    words = {"الم": "افتتاحية (٦ سور منها الروم)", "الر": "افتتاحية (٥ سور)",
+             "المر": "افتتاحية الرعد", "المص": "افتتاحية الأعراف",
+             "الروم": "٣٠:٢", "الامر": "هيكل «الأمر» (٣٠ موضع)", "ارم": "هيكل «إرم» ٨٩:٧"}
+    keys = list(words)
+    dist = {a: {b: damerau(a, b) for b in keys} for a in keys}
+    subseq = [[a, b] for a in keys for b in keys if a != b and is_subseq(a, b)]
+    scs = shortest_common_supersequences("الم", "الر")
+    vocab = Counter(w for *_, w in q.words_rasm())
+    openings = {"الم", "الر", "المر", "المص"}
+
+    def one_insertion_supersets(core):
+        return sorted(((w, n) for w, n in vocab.items()
+                       if len(w) == len(core) + 1 and is_subseq(core, w)), key=lambda x: -x[1])
+
+    scs_report = []
+    for s in scs:
+        sup = one_insertion_supersets(s)
+        scs_report.append({
+            "scs": s,
+            "is_opening": s in openings,
+            "occurs_as_word": vocab.get(s, 0),
+            "words_one_letter_longer_containing_it": len(sup),
+            "examples": sup[:15],
+        })
+    return {
+        "id": "EXP-02",
+        "question": "شو العلاقات الحرفية الدقيقة بين الم والر والمر وكلمات الروم والأمر وإرم؟",
+        "operations": {"insert": "إضافة حرف", "delete": "حذف حرف", "substitute": "تبديل حرف بحرف",
+                       "transpose": "تبديل موقع حرفين متجاورين"},
+        "words": words,
+        "distance_damerau": dist,
+        "subsequence_pairs": subseq,
+        "scs_of_alm_and_alr": scs_report,
+        "finding": ("أقصر تراكيب بتحتوي الم والر مع بعض (shortest common supersequences) اثنين بالضبط: "
+                    "المر والرم. الأولى افتتاحية الرعد، والثانية مش افتتاحية ولا كلمة بالقرآن. "
+                    "المر قاعدة جوّا هيكل الامر (بإضافة ألف)، والرم قاعدة جوّا الروم (بإضافة واو)، "
+                    "وارم هي الرم بلا لام. بس انتبه: الاحتواء لحاله ما بيميّز — "
+                    + "، ".join(f"{r['scs']} + حرف: {' / '.join(w for w, _ in r['examples'])}" for r in scs_report)
+                    + "."),
+        "status": "FORMALIZED RULE",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-03  «لله الأمر»: موضعين بس، بالرعد والروم. شو احتمال هيك صدفة؟
+# ---------------------------------------------------------------------------
+def exp03():
+    q = quran.load()
+    hits = q.find_rasm("لله الأمر")
+    # خط الأساس: كل زوج كلمتين متتاليتين (bigram) ظهر مرتين بالضبط في سورتين مختلفتين.
+    occ = defaultdict(list)
+    for k in q.keys():
+        w = quran.rasm(q.verse_simple(*k)).split(" ")
+        for i in range(len(w) - 1):
+            occ[w[i] + " " + w[i + 1]].append(k)
+    twice = {g: v for g, v in occ.items() if len(v) == 2 and v[0][0] != v[1][0]}
+    pair = {13, 30}
+    same_pair = sorted(g for g, v in twice.items() if {v[0][0], v[1][0]} == pair)
+    site = set(_site_suras())
+    both_sites = sum(1 for v in twice.values() if v[0][0] in site and v[1][0] in site)
+    return {
+        "id": "EXP-03",
+        "question": "عبارة «لله الأمر» وين بتظهر؟ وهل ظهورها بالرعد والروم بالذات نادر؟",
+        "occurrences": [{"sura": s, "ayah": a, "text": q.verse(s, a)} for s, a in hits],
+        "baseline": {
+            "bigrams_exactly_twice_in_two_suras": len(twice),
+            "of_which_in_pair_13_30": len(same_pair),
+            "pair_13_30_bigrams": same_pair,
+            "fraction_with_both_in_29_site_suras": round(both_sites / len(twice), 4),
+            "share_of_ayahs_in_29_site_suras": round(_share(q, site), 4),
+        },
+        "finding": ("«لله الأمر» بالترتيب هاد بتظهر مرتين بس: الرعد ١٣:٣١ («بل لله الأمر جميعا») والروم ٣٠:٤ "
+                    "(«لله الأمر من قبل ومن بعد»). يعني بالسورتين اللي بيدور حولهم سؤال المر/الم. "
+                    "وخط الأساس طلّع إشي ما كنّا بندوّر عليه: الزوج ١٣/٣٠ بيتشارك كمان «يريكم البرق خوفا» "
+                    "(الرعد ١٣:١٢ والروم ٣٠:٢٤) — البرق بسورة الرعد وبسورة الروم. "
+                    "بس في تحذير: المؤلف كان عارف آية الرعد، واختيار الزوج ١٣/٣٠ صار بعد ما شفنا النتيجة، "
+                    "فالرقم الأساسي هون للوصف مش برهان قصد."),
+        "status": "OBSERVED STRUCTURE",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-04  الصرح، وأسباب السماوات، وكوكبة حم
+# ---------------------------------------------------------------------------
+def exp04():
+    q = quran.load()
+    site = set(_site_suras())
+    sarh = [(s, a, w) for s, a, i, w in q.words_rasm() if "صرح" in w]
+    sarh_verses = sorted({(s, a) for s, a, _ in sarh})
+    share = _share(q, site)
+    ha_mim = [40, 41, 42, 43, 44, 45, 46]
+    heavens = {}
+    for s in ha_mim:
+        heavens[q.name(s)] = sorted({a for ss, a, i, w in q.words_rasm() if ss == s and "سماوات" in w})
+    seven = {p: q.find_rasm(p) for p in ["سبع سماوات", "السماوات السبع", "سبع طرائق", "سبعا شدادا"]}
+    return {
+        "id": "EXP-04",
+        "question": "وين بيظهر «الصرح»؟ وشو اللي بيحيط بكلام فرعون عن أسباب السماوات في كوكبة حم؟",
+        "sarh_words": sarh,
+        "sarh_verses": [{"sura": s, "ayah": a, "name": q.name(s), "text": q.verse(s, a)} for s, a in sarh_verses],
+        "all_sarh_suras_are_sites": all(s in site for s, _ in sarh_verses),
+        "chance_if_independent_by_ayah_share": round(share ** len(sarh_verses), 4),
+        "share_of_ayahs_in_29_site_suras": round(share, 4),
+        "ghafir_36_37": [q.verse(40, 36), q.verse(40, 37)],
+        "seven_heavens_phrases": seven,
+        "ha_mim_chain": [{"sura": s, "name": q.name(s), "ayahs": q.ayah_count(s)} for s in ha_mim],
+        "heavens_mentions_in_ha_mim": heavens,
+        "finding": ("كلمة صرح بتظهر بثلاث آيات بس: النمل ٢٧:٤٤ (طس)، القصص ٢٨:٣٨ (طسم)، غافر ٤٠:٣٦ (حم) — "
+                    "كلها سور من مواقع النجوم. ومباشرة بعد غافر، أول سورة بعدها بكوكبة حم (فصلت ٤١:١٢) "
+                    "فيها «فقضاهن سبع سماوات في يومين». آية الصرح نفسها ما بتذكر سبعة؛ التجاور بين "
+                    "السورتين هو الملاحظة، مش وصف للبرج."),
+        "status": "OBSERVED STRUCTURE",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-05  «إن في ذلك لآيات»: التوزيع وعنقود الروم
+# ---------------------------------------------------------------------------
+def exp05():
+    q = quran.load()
+    plural = q.find_rasm("في ذلك لآيات")
+    singular = q.find_rasm("إن في ذلك لآية")
+    by_sura = Counter(s for s, _ in plural)
+    total = len(plural)
+    expected_30 = total * q.ayah_count(30) / len(q.keys())
+    return {
+        "id": "EXP-05",
+        "question": "عبارة «في ذلك لآيات» كيف بتتوزّع؟ وليش الروم؟",
+        "plural_occurrences": [{"sura": s, "ayah": a, "name": q.name(s)} for s, a in plural],
+        "plural_by_sura": {q.name(s): n for s, n in by_sura.most_common()},
+        "singular_occurrences_count": len(singular),
+        "rum_observed": by_sura[30],
+        "rum_expected_by_length": round(expected_30, 3),
+        "rum_consecutive_run": [a for s, a in plural if s == 30],
+        "finding": (f"الجمع «لآيات» ظهر {total} مرة. الروم لحالها فيها {by_sura[30]} (أكثر سورة)، "
+                    "منها أربع متتالية ٣٠:٢١–٢٤، وبينها «منامكم بالليل والنهار» (٣٠:٢٣). "
+                    f"لو التوزيع حسب الطول بس كان المتوقع ≈ {expected_30:.2f}."),
+        "status": "OBSERVED STRUCTURE",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-06  العمد والعماد وإرم
+# ---------------------------------------------------------------------------
+def exp06():
+    q = quran.load()
+    hits = [(s, a, w) for s, a, i, w in q.words_rasm() if w in ("عمد", "العماد")]
+    return {
+        "id": "EXP-06",
+        "question": "إرم ذات العماد (٨٩:٧) و«بغير عمد» — وين بتلتقي؟",
+        "occurrences": [{"sura": s, "ayah": a, "word": w, "name": q.name(s), "text": q.verse(s, a)} for s, a, w in hits],
+        "finding": ("«عَمَد» (أعمدة) بتظهر بالرعد ١٣:٢ (المر) ولقمان ٣١:١٠ (الم) بصيغة «بغير عمد ترونها»، "
+                    "وبالهمزة ١٠٤:٩. و«العماد» مرة وحدة مع إرم. يعني صورة الأعمدة/اللاأعمدة بتمرّ بسورتين من "
+                    "عيلة ا ل م ر. هاد تجاور معجمي، مش عملية حرفية."),
+        "status": "OBSERVED STRUCTURE",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-07  الدخول والسكن في سورة النمل
+# ---------------------------------------------------------------------------
+def exp07():
+    q = quran.load()
+    enter = [(a, w) for s, a, i, w in q.words_rasm() if s == 27 and w.startswith(("ادخل", "وادخل", "فادخل"))]
+    return {
+        "id": "EXP-07",
+        "question": "في سورة النمل، شو اللي بيندخل، ومين بيدخل؟",
+        "enter_words_in_naml": enter,
+        "verses": {str(a): q.verse(27, a) for a in sorted({a for a, _ in enter} | {18, 20, 44})},
+        "finding": ("بالنمل: النملة بتقول «ادخلوا مساكنكم» (٢٧:١٨)، وبعدها بآيتين «وتفقد الطير ... أم كان من الغائبين» "
+                    "(٢٧:٢٠)، وبالآخر «قيل لها ادخلي الصرح» (٢٧:٤٤). دخول للمسكن، تفقّد للغائب، دخول للصرح."),
+        "status": "OBSERVED STRUCTURE",
+    }
+
+
+# ---------------------------------------------------------------------------
+# EXP-08  هيكل اللؤلؤ: كلمة وحدة بالرسم، أكثر من قراءة
+# ---------------------------------------------------------------------------
+def exp08():
+    q = quran.load()
+    occ = []
+    for s, a, i, w in q.words_rasm():
+        core = w[1:] if w.startswith("و") else w
+        core = core[2:] if core.startswith("ال") else core
+        if core.startswith("لولو"):
+            uth = q.verse(s, a).split(" ")[i - 1]
+            occ.append({"sura": s, "ayah": a, "name": q.name(s), "word_index": i,
+                        "skeleton": w, "uthmani": uth, "uthmani_skeleton": quran.rasm(uth),
+                        "enter_in_ayah": any("دخل" in x for x in quran.rasm(q.verse_simple(s, a)).split(" ")),
+                        "text": q.verse(s, a)})
+    readings = defaultdict(list)
+    for o in occ:
+        readings["لُؤْلُؤ" if "ؤ" in o["uthmani"] else "لَوَلَّوْا"].append(f"{o['sura']}:{o['ayah']}")
+    return {
+        "id": "EXP-08",
+        "question": "كم مرة بيظهر هيكل «لولو» بالقرآن، وكم قراءة إله؟",
+        "occurrences": occ,
+        "same_skeleton_in_both_editions": all("لولو" in o["uthmani_skeleton"] for o in occ),
+        "readings": dict(readings),
+        "enter_cooccurrence": [f"{o['sura']}:{o['ayah']}" for o in occ if o["enter_in_ayah"]],
+        "finding": (f"هيكل «لولو» بيظهر بـ{len(occ)} آيات، وهو نفس الكلمة بالرسم بكل المواضع. "
+                    f"بطبقة القراءة بينقرا قراءتين: «لُؤْلُؤ» ({len(readings['لُؤْلُؤ'])} مواضع) "
+                    f"و«لَوَلَّوْا» ({len(readings['لَوَلَّوْا'])}: التوبة ٩:٥٧ والفتح ٤٨:٢٢). "
+                    "يعني الرسم الواحد بيحمل حالتين، والقراءة هي اللي بتحسم. "
+                    f"وفعل الدخول (دخل) بيظهر بـ{sum(o['enter_in_ayah'] for o in occ)} من الآيات: "
+                    "٩:٥٧ (مدّخلا)، ٢٢:٢٣ (يدخل)، ٣٥:٣٣ (يدخلونها)."),
+        "status": "VERIFIED TEXT",
+    }
+
+
+EXPERIMENTS = [exp01, exp02, exp03, exp04, exp05, exp06, exp07, exp08]
+
+
+def run_all():
+    os.makedirs(RESULTS, exist_ok=True)
+    sites_mod.build()
+    out = []
+    for fn in EXPERIMENTS:
+        r = fn()
+        with open(os.path.join(RESULTS, r["id"] + ".json"), "w", encoding="utf-8") as f:
+            json.dump(r, f, ensure_ascii=False, indent=1)
+        out.append(r)
+    return out
+
+
+if __name__ == "__main__":
+    for r in run_all():
+        print(f"{r['id']}  [{r['status']}]  {r['finding']}\n")

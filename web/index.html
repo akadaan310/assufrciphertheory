@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لؤلؤ العربية</title>
+<meta name="description" content="لؤلؤ العربية: الأَولى في اللغات العالمي، الكوني، والحسابي — لغة اللؤلؤ واللؤلؤة">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="pearl-dot"></span> <span id="brand-title">لؤلؤ العربية</span> <small id="brand-line">لغة اللؤلؤ واللؤلؤة</small></div>
+  <nav>
+    <a href="#atlas" data-view="atlas">الأطلس</a>
+    <a href="#book" data-view="book">الكتاب</a>
+    <a href="#pearls" data-view="pearls">سجلّ اللآلئ</a>
+  </nav>
+  <button id="theme" aria-label="تبديل الوضع">◐</button>
+</header>
+
+<main>
+  <section class="hero" id="hero">
+    <h1 id="hero-title">لؤلؤ العربية</h1>
+    <p class="hero-sub" id="hero-sub">الأَولى في اللغات العالمي، الكوني، والحسابي</p>
+    <p class="hero-brand"><span class="pearl-dot"></span> <span id="hero-brand">لغة اللؤلؤ واللؤلؤة</span> <span class="pearl-dot"></span></p>
+  </section>
+
+  <section id="view-atlas" class="view">
+    <div class="maps" role="tablist"></div>
+    <div class="atlas-wrap">
+      <div class="stage">
+        <svg id="sky" viewBox="0 0 1000 720" role="img" aria-label="أطلس مواقع النجوم"></svg>
+        <p class="caption" id="caption"></p>
+        <div class="legend" id="legend"></div>
+      </div>
+      <aside class="panel" id="panel">
+        <p class="hint">اضغط على أي نجمة أو وصلة عشان تفتح لؤلؤتها.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="view-book" class="view" hidden>
+    <div class="book">
+      <ol class="toc" id="toc"></ol>
+      <article class="chapter" id="chapter"></article>
+    </div>
+  </section>
+
+  <section id="view-pearls" class="view" hidden>
+    <div class="filters" id="filters"></div>
+    <div class="pearl-list" id="pearl-list"></div>
+  </section>
+</main>
+
+<footer>
+  النص القرآني من <a href="https://tanzil.net">مشروع تنزيل</a> (Tanzil Uthmani 1.1، CC BY 3.0) بدون تعديل.
+  كل رسم هون مبني من نفس سجلّ البيانات (<code>web/data.js</code>).
+</footer>
+
+<script src="data.js"></script>
+<script src="chapters.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

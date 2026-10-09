@@ -1,0 +1,442 @@
+{
+ "id": "EXP-01",
+ "question": "هل في خاصية نصية بسيطة بتفصل الحروف المغوصة عن الطائرة حسب تصنيف المؤلف الأولي؟",
+ "data": [
+  {
+   "id": "STAR-01",
+   "sura": 2,
+   "name": "البقرة",
+   "letters": "الم",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-02",
+   "sura": 3,
+   "name": "آل عمران",
+   "letters": "الم",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-03",
+   "sura": 7,
+   "name": "الأعراف",
+   "letters": "المص",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-04",
+   "sura": 10,
+   "name": "يونس",
+   "letters": "الر",
+   "class": "مغوصة",
+   "standalone_ayah": false,
+   "single_letter": false,
+   "has_ra": true,
+   "last_letter_has_madd_sign": false,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-05",
+   "sura": 11,
+   "name": "هود",
+   "letters": "الر",
+   "class": "مغوصة",
+   "standalone_ayah": false,
+   "single_letter": false,
+   "has_ra": true,
+   "last_letter_has_madd_sign": false,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-06",
+   "sura": 12,
+   "name": "يوسف",
+   "letters": "الر",
+   "class": "مغوصة",
+   "standalone_ayah": false,
+   "single_letter": false,
+   "has_ra": true,
+   "last_letter_has_madd_sign": false,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-07",
+   "sura": 13,
+   "name": "الرعد",
+   "letters": "المر",
+   "class": "مغوصة",
+   "standalone_ayah": false,
+   "single_letter": false,
+   "has_ra": true,
+   "last_letter_has_madd_sign": false,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-08",
+   "sura": 14,
+   "name": "إبراهيم",
+   "letters": "الر",
+   "class": "مغوصة",
+   "standalone_ayah": false,
+   "single_letter": false,
+   "has_ra": true,
+   "last_letter_has_madd_sign": false,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-09",
+   "sura": 15,
+   "name": "الحجر",
+   "letters": "الر",
+   "class": "مغوصة",
+   "standalone_ayah": false,
+   "single_letter": false,
+   "has_ra": true,
+   "last_letter_has_madd_sign": false,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-10",
+   "sura": 19,
+   "name": "مريم",
+   "letters": "كهيعص",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-11",
+   "sura": 20,
+   "name": "طه",
+   "letters": "طه",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": false,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-12",
+   "sura": 26,
+   "name": "الشعراء",
+   "letters": "طسم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-13",
+   "sura": 27,
+   "name": "النمل",
+   "letters": "طس",
+   "class": "مغوصة",
+   "standalone_ayah": false,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-14",
+   "sura": 28,
+   "name": "القصص",
+   "letters": "طسم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-15",
+   "sura": 29,
+   "name": "العنكبوت",
+   "letters": "الم",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-16",
+   "sura": 30,
+   "name": "الروم",
+   "letters": "الم",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-17",
+   "sura": 31,
+   "name": "لقمان",
+   "letters": "الم",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-18",
+   "sura": 32,
+   "name": "السجدة",
+   "letters": "الم",
+   "class": "طائرة",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-19",
+   "sura": 36,
+   "name": "يس",
+   "letters": "يس",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-20",
+   "sura": 38,
+   "name": "ص",
+   "letters": "ص",
+   "class": "مغوصة",
+   "standalone_ayah": false,
+   "single_letter": true,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": true
+  },
+  {
+   "id": "STAR-21",
+   "sura": 40,
+   "name": "غافر",
+   "letters": "حم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-22",
+   "sura": 41,
+   "name": "فصلت",
+   "letters": "حم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-23",
+   "sura": 42,
+   "name": "الشورى",
+   "letters": "حم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-24",
+   "sura": 43,
+   "name": "الزخرف",
+   "letters": "حم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-25",
+   "sura": 44,
+   "name": "الدخان",
+   "letters": "حم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-26",
+   "sura": 45,
+   "name": "الجاثية",
+   "letters": "حم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-27",
+   "sura": 46,
+   "name": "الأحقاف",
+   "letters": "حم",
+   "class": "غير محسوم",
+   "standalone_ayah": true,
+   "single_letter": false,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": false
+  },
+  {
+   "id": "STAR-28",
+   "sura": 50,
+   "name": "ق",
+   "letters": "ق",
+   "class": "طائرة",
+   "standalone_ayah": false,
+   "single_letter": true,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": true
+  },
+  {
+   "id": "STAR-29",
+   "sura": 68,
+   "name": "القلم",
+   "letters": "ن",
+   "class": "طائرة",
+   "standalone_ayah": false,
+   "single_letter": true,
+   "has_ra": false,
+   "last_letter_has_madd_sign": true,
+   "next_is_waw_oath": true
+  }
+ ],
+ "rules": {
+  "R1": {
+   "rule": "مغوصة ⇔ الافتتاحية مش آية مستقلة (بتشارك آيتها كلام بعدها)",
+   "agree": 17,
+   "of": 19,
+   "counterexamples": [
+    "ق (ق): القاعدة بتقول مغوصة، والمؤلف بيقول طائرة",
+    "القلم (ن): القاعدة بتقول مغوصة، والمؤلف بيقول طائرة"
+   ],
+   "predictions_for_unclassified": {
+    "الشعراء (طسم)": "طائرة",
+    "القصص (طسم)": "طائرة",
+    "يس (يس)": "طائرة",
+    "غافر (حم)": "طائرة",
+    "فصلت (حم)": "طائرة",
+    "الشورى (حم)": "طائرة",
+    "الزخرف (حم)": "طائرة",
+    "الدخان (حم)": "طائرة",
+    "الجاثية (حم)": "طائرة",
+    "الأحقاف (حم)": "طائرة"
+   }
+  },
+  "R2": {
+   "rule": "مغوصة ⇔ الافتتاحية فيها راء",
+   "agree": 17,
+   "of": 19,
+   "counterexamples": [
+    "النمل (طس): القاعدة بتقول طائرة، والمؤلف بيقول مغوصة",
+    "ص (ص): القاعدة بتقول طائرة، والمؤلف بيقول مغوصة"
+   ],
+   "predictions_for_unclassified": {
+    "الشعراء (طسم)": "طائرة",
+    "القصص (طسم)": "طائرة",
+    "يس (يس)": "طائرة",
+    "غافر (حم)": "طائرة",
+    "فصلت (حم)": "طائرة",
+    "الشورى (حم)": "طائرة",
+    "الزخرف (حم)": "طائرة",
+    "الدخان (حم)": "طائرة",
+    "الجاثية (حم)": "طائرة",
+    "الأحقاف (حم)": "طائرة"
+   }
+  },
+  "R3": {
+   "rule": "مغوصة ⇔ آخر حرف مش عليه علامة مدّ في الرسم",
+   "agree": 16,
+   "of": 19,
+   "counterexamples": [
+    "طه (طه): القاعدة بتقول مغوصة، والمؤلف بيقول طائرة",
+    "النمل (طس): القاعدة بتقول طائرة، والمؤلف بيقول مغوصة",
+    "ص (ص): القاعدة بتقول طائرة، والمؤلف بيقول مغوصة"
+   ],
+   "predictions_for_unclassified": {
+    "الشعراء (طسم)": "طائرة",
+    "القصص (طسم)": "طائرة",
+    "يس (يس)": "طائرة",
+    "غافر (حم)": "طائرة",
+    "فصلت (حم)": "طائرة",
+    "الشورى (حم)": "طائرة",
+    "الزخرف (حم)": "طائرة",
+    "الدخان (حم)": "طائرة",
+    "الجاثية (حم)": "طائرة",
+    "الأحقاف (حم)": "طائرة"
+   }
+  },
+  "R4": {
+   "rule": "مغوصة ⇔ مش آية مستقلة، والكلمة اللي بعدها مش واو قسم",
+   "agree": 18,
+   "of": 19,
+   "counterexamples": [
+    "ص (ص): القاعدة بتقول طائرة، والمؤلف بيقول مغوصة"
+   ],
+   "predictions_for_unclassified": {
+    "الشعراء (طسم)": "طائرة",
+    "القصص (طسم)": "طائرة",
+    "يس (يس)": "طائرة",
+    "غافر (حم)": "طائرة",
+    "فصلت (حم)": "طائرة",
+    "الشورى (حم)": "طائرة",
+    "الزخرف (حم)": "طائرة",
+    "الدخان (حم)": "طائرة",
+    "الجاثية (حم)": "طائرة",
+    "الأحقاف (حم)": "طائرة"
+   }
+  }
+ },
+ "finding": "R1 بتطابق كل الحالات المغوصة (كلها جوّا آية أطول)، بس بتغلط في ق ون: هدول جوّا آية والمؤلف بيعدّهم طائرة. ولا قاعدة من الأربع بتطابق التصنيف كاملًا.",
+ "status": "COUNTEREXAMPLE FOUND"
+}
